@@ -1,0 +1,614 @@
+@charset "UTF-8";
+/*重置样式表*/
+/*==========样式重置===========*/
+@import url(../font/iconfont.css);
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, l, ol, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+header, footer, section, nav, main {
+  display: block;
+}
+
+body {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  color: #dbac72;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #dbac72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+html, body {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #fffff0;
+}
+
+.container {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+header .top {
+  display: flex;
+  height: 44px;
+  background: #dbac72;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+}
+
+header .top .top_l {
+  width: 46px;
+  height: 44px;
+  float: left;
+  position: absolute;
+  font-size: 24px;
+  margin-left: 2px;
+}
+
+header .top .top_l a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  font-size: 24px;
+}
+
+header .top h4 {
+  font-size: 15px;
+  width: 100%;
+}
+
+main {
+  overflow-y: auto;
+}
+
+main .wrap {
+  width: 100%;
+  height: 127px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .wrap .wrap_title {
+  height: 60px;
+  line-height: 30px;
+  text-indent: 1em;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .wrap .wrap_title strong {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+main .wrap .addres {
+  height: 65px;
+}
+
+main .wrap .addres .no_addres {
+  height: 45px;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px;
+}
+
+main .wrap .addres .no_addres .add_addres {
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+}
+
+main .wrap .addres .no_addres .add_addres span {
+  font-size: 14px;
+  color: red;
+  margin: 10px auto;
+}
+
+main .wrap .addres .no_addres .add_addres i {
+  color: #ddd;
+  float: right;
+}
+
+main .list header {
+  padding: 10px;
+  font-size: 14px;
+}
+
+main .list .goodslist {
+  display: flex;
+  flex-direction: column;
+}
+
+main .list .goodslist .good {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+main .list .goodslist .good .l_img {
+  width: 50px;
+  height: 50px;
+  flex: 1;
+}
+
+main .list .goodslist .good .l_img img {
+  border-radius: 20%;
+  width: 50px;
+  height: 50px;
+}
+
+main .list .goodslist .good .r_content {
+  height: 106px;
+  flex: 6;
+  padding: 0 0 0 10px;
+  line-height: 20px;
+}
+
+main .list .goodslist .good .r_content figcaption p {
+  color: #9b4802;
+  font-size: 14px;
+}
+
+main .list .goodslist .good .r_content .price {
+  color: red;
+}
+
+main .list .goodslist .good .r_content .size {
+  color: #afaf8c;
+}
+
+main .list .goodslist .good .r_content .definition {
+  width: 100%;
+  height: 35px;
+  margin-top: 8px;
+}
+
+main .list .goodslist .good .r_content .definition .goods_inde {
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+}
+
+main .list .goodslist .good .r_content .definition .goods_inde span {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #f2f2f2;
+  font-size: 16px;
+  color: #000;
+}
+
+main .list .goodslist .good .r_content .definition .goods_inde .in_num {
+  float: left;
+  width: 50px;
+  height: 30px;
+  border: 1px solid #f2f2f2;
+}
+
+main .list .goodslist .good .r_content .definition .goods_inde .in_num input {
+  border: 0;
+  outline: none;
+  width: 50px;
+  height: 26px;
+  line-height: 26px;
+  background: #fff;
+  text-align: center;
+}
+
+main .list .goodslist .good .r_content .definition .close {
+  float: right;
+}
+
+main .list .goodslist .good .r_content .definition .close img {
+  width: 30px;
+  height: 30px;
+}
+
+main .choose {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+main .choose .pattern span {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: url("../img/icon001.png") repeat-x;
+  background-size: auto 100%;
+}
+
+main .choose header {
+  height: 40px;
+  padding-top: 10px;
+}
+
+main .choose header h4 {
+  padding: 10px;
+  float: left;
+  font-size: 14px;
+}
+
+main .choose header .head_r {
+  float: right;
+  padding-top: 5px;
+}
+
+main .choose header .head_r span, main .choose header .head_r img {
+  height: 23px;
+  line-height: 23px;
+  float: left;
+}
+
+main .choose .choose_scroll {
+  overflow-y: auto;
+  height: 30px;
+}
+
+main .choose .choose_scroll ul {
+  width: 1575px;
+}
+
+main .choose .choose_scroll ul li {
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  color: #000;
+}
+
+main .choose .choose_scroll ul .active {
+  color: #fff;
+  background: #dbac72;
+}
+
+main .choose .choose_list ul {
+  position: relative;
+}
+
+main .choose .choose_list ul .choose_in {
+  display: block;
+}
+
+main .choose .choose_list ul li {
+  width: 100%;
+  height: 115px;
+  margin: 15px 0;
+  padding: 10px 0 0 0;
+  display: none;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .choose .choose_list ul li .cho {
+  display: flex;
+}
+
+main .choose .choose_list ul li .cho .cho_l {
+  width: 50px;
+  flex: 1;
+}
+
+main .choose .choose_list ul li .cho .cho_l img {
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+}
+
+main .choose .choose_list ul li .cho .cho_r {
+  flex: 6;
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+main .choose .choose_list ul li .cho .cho_r .add_btn {
+  float: right;
+}
+
+main .choose .choose_list ul li .cho .cho_r .add_btn .add {
+  display: block;
+  width: 98px;
+  height: 30px;
+  background: #dbac72;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 11px;
+}
+
+main .matchingWarp {
+  padding: 10px;
+}
+
+main .matchingWarp .cheaked {
+  border: 1px solid #dbac72;
+  color: #fff;
+  background: #dbac72;
+}
+
+main .matchingWarp article {
+  padding: 10px 0;
+}
+
+main .matchingWarp article header {
+  height: 19px;
+  width: 100%;
+}
+
+main .matchingWarp article header h4 {
+  float: left;
+  font-size: 14px;
+}
+
+main .matchingWarp article header .header_r {
+  float: right;
+}
+
+main .matchingWarp article header .header_r .checkbox {
+  float: left;
+  margin-left: 15px;
+}
+
+main .matchingWarp article header .header_r .checkbox input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #dddddd;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+main .matchingWarp .brand .chocolate {
+  display: none;
+}
+
+main .matchingWarp .brand .chocolate ul {
+  display: flex;
+  padding: 15px 0;
+}
+
+main .matchingWarp .brand .chocolate ul .f3 {
+  padding-left: 28px;
+}
+
+main .matchingWarp .brand .chocolate ul li {
+  flex: 1;
+}
+
+main .matchingWarp .brand .chocolate ul li .checkbox input {
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #dddddd;
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+main .matchingWarp .brand .chocolate .other {
+  display: none;
+  height: 32px;
+  border: 1px solid #FBF1E3;
+  border-radius: 8px;
+}
+
+main .matchingWarp .brand .chocolate .other input {
+  border-radius: 8px;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 98%;
+  height: 32px;
+  line-height: 32px;
+  background: #FBF1E3;
+  padding: 0 5px;
+}
+
+main .matchingWarp .greeting .greetingMessage {
+  display: none;
+}
+
+main .matchingWarp .greeting .greetingMessage #greetingMessageText {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 5px;
+  border: 0;
+  border-radius: 8px;
+  width: 97%;
+  height: 82px;
+  background: #FBF1E3;
+}
+
+main .matchingWarp .discount .userEnvsList {
+  padding: 10px 0;
+}
+
+main .matchingWarp .discount .userEnvsList .react {
+  width: 100%;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+main .matchingWarp .discount .userEnvsList .react span {
+  float: left;
+}
+
+main .matchingWarp .discount .userEnvsList .react i {
+  float: right;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  height: 14px;
+  width: 14px;
+  margin: -9px 0 0 0;
+  border-radius: 50px;
+  border: 2px solid #dbac72;
+}
+
+main .matchingWarp .dis .dis_date {
+  padding-top: 10px;
+}
+
+main .matchingWarp .dis .dis_date input {
+  border-radius: 8px;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 98%;
+  height: 32px;
+  line-height: 32px;
+  background: #FBF1E3;
+  padding: 0 5px;
+  color: #dbac72;
+}
+
+main .matchingWarp .dis .dis_time {
+  padding-top: 10px;
+}
+
+main .matchingWarp .dis .dis_time p {
+  color: red;
+  margin-top: 6px;
+}
+
+main .matchingWarp .dis .dis_time #selectTtime {
+  border-radius: 8px;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  background: #FBF1E3;
+  color: #dbac72;
+}
+
+main .matchingWarp .dis .dis_time #selectTtime option {
+  width: 25%;
+}
+
+main .matchingWarp .disphone .dis_phone {
+  padding-top: 10px;
+}
+
+main .matchingWarp .disphone .dis_phone input {
+  border-radius: 8px;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 98%;
+  height: 32px;
+  line-height: 32px;
+  background: #FBF1E3;
+  padding: 0 5px;
+  color: #dbac72;
+}
+
+main .matchingWarp .disphone .dis_phone p {
+  color: red;
+  margin-top: 6px;
+}
+
+main .matchingWarp .disless .dis_less {
+  padding-top: 10px;
+}
+
+main .matchingWarp .disless .dis_less input {
+  border-radius: 8px;
+  font-size: 14px;
+  border: 0;
+  outline: none;
+  width: 98%;
+  height: 32px;
+  line-height: 32px;
+  background: #FBF1E3;
+  padding: 0 5px;
+  color: #dbac72;
+}
+
+main .matchingWarp .disless .dis_less p {
+  margin-top: 6px;
+}
+
+main .matchingWarp .charging p {
+  height: 30px;
+  line-height: 30px;
+  color: #000;
+  font-size: 14px;
+}
+
+main .matchingWarp .charging p span {
+  color: #f50;
+}
+
+main .matchingWarp .buy_box {
+  padding: 20px 0 100px 0;
+}
+
+main .matchingWarp .buy_box #payment-btn {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #3fae38;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border-radius: 3px;
+}

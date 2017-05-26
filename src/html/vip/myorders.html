@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>我的订单</title>
+	<link rel="stylesheet" href="../../font/iconfont.css">
+	<link rel="stylesheet" href="../../css/myorders.css">
+	<script src="../../lib/jquery/jquery-3.1.1.js"></script>
+	<script src="../../lib/common/global.js"></script>
+	<script src="../../js/goback.js"></script>
+	<script src="../../js/order.js"></script>
+	<script>
+		$(function(){
+		    //默认显示第一个
+			$('.orlist').children().eq(0).addClass('active');
+		    $('.orlist').on('click','li',function(){
+				$(this).addClass('active').siblings().removeClass('active');
+			})
+
+		})
+	</script>
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h4><span class="iconfont icon-fanhui"></span>我的订单</h4>
+			<ul class="orlist">
+				<li>全部</li>
+				<li>待付款</li>
+				<li>待发货</li>
+				<li>待收货</li>
+				<li>已完成</li>
+			</ul>
+		</header>
+		<main>
+			<ul class="orMsgList">
+				<!--<li>-->
+					<!--<p>订单号：<span class="orNum"></span><span class="orStatus">未支付</span></p>-->
+					<!--<div class="or_msg">-->
+						<!--<div class="or_up clearfix">-->
+							<!--<div class="or_up_left">-->
+								<!--<img src="../../img/index/homelist2.jpg">-->
+							<!--</div>-->
+							<!--<div class="or_up_right">-->
+								<!--<p class="goodsname">男宝宝生日帽</p>-->
+								<!--<p class="goodsnorms">默认规格</p>-->
+								<!--<span class="goodsprice">￥3.00</span>-->
+								<!--<span class="goodsqty">&times;1</span>-->
+							<!--</div>-->
+						<!--</div>-->
+						<!--<div class="or_down">-->
+							<!--<p>合计:<span></span></p>-->
+							<!--<div class="btn">-->
+								<!--<input type="button" id="delOr" value="取消订单">-->
+								<!--<input type="button" id="pay" value="立即支付">-->
+								<!--<input type="button" id="ordetails" value="订单详情">-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</li>-->
+			</ul>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<a href="../../index.html">
+						<i class="iconfont icon-icon"></i><br>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i class="iconfont icon-mulu"></i><br>
+						<span>蛋糕名录</span>
+					</a>
+				</li>
+				<li>
+					<a href="../car.html">
+						<i class="iconfont icon-gouwuche"></i><br>
+						<span>购物车</span>
+					</a>
+				</li>
+				<li>
+					<a href="memberCenter.html">
+						<i class="iconfont icon-personal"></i><br>
+						<span>会员中心</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>

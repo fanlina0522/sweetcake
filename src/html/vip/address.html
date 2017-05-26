@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的收货地址-果吉多蛋糕</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../../css/address.css">
+	<script src="../../lib/jquery/jquery-3.1.1.js"></script>
+	<!--<script  src ="../../js/require.js" data-main ="../../js/add-address.js"></script>-->
+	<script src="../../js/goback.js"></script>
+	<script src="../../lib/common/global.js"></script>
+	<script>
+		$(function(){
+		    $.post(erp.baseUrl + 'address',function(response){
+		        console.log(response);
+				$('.myAddress').html(response.map(function(item,index){
+					return `<li>
+						<p class="selfMsg"><span class="name">${item.username}</span>
+							<span class="phone">${item.phone}</span>
+						</p>
+						<p><span class="city">${item.address.replace(',','')}</span><span class="xxadd">${item.addrs}</span></p>
+						<p><span class="mr">设为默认</span><span class="reset">编辑</span></p>
+					</li>`;
+				}).join(''));
+
+				//编辑信息，事件委托
+				$('.myAddress').on('click','.reset',function(){
+
+				})
+				//设置默认
+				$('.myAddress').on('click','.mr',function(){
+					var p = $('.mr').parents('li').children('.selfMsg');
+					var p1 = $(this).parents('li').children('.selfMsg');
+					var sp =  $('<span/>').addClass('mr_btn').text('默认');
+					p.children('.mr_btn').remove();
+					p1.append(sp);
+				})
+			})
+		})
+	</script>
+</head>
+<body>
+	<div id="box">
+		<header>
+			<div class="container">
+				<div class="top">
+					<div class="top_l">
+						<a  class="iconfont icon-fanhui" href="#">
+							<!-- &lt; -->
+						</a>
+					</div>
+					<h4>
+						我的收货地址
+					</h4>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container">
+				<ul class="myAddress">
+
+				</ul>
+				<div class="addAddress">
+					<a href="add-address.html">新建地址</a>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

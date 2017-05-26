@@ -1,0 +1,45 @@
+#webWarp { max-width: 640px; margin: auto; }
+
+.productDetailWarp { position: relative; color: #cacaa8; }
+
+.pl10 { padding-left: 10px; padding-right: 10px; }
+
+.commentary .item { padding: 10px 0; border-bottom: 1px solid #f5f5e9; }
+
+.commentary .graphic p { font-size: 12px; }
+
+.commentary .graphic .conWarp { margin: 0 0 0 55px; }
+
+.commentary .graphic .picWarp { width: 37px; height: 37px; border-radius: 50px; border: 2px solid rgba(0, 0, 0, 0.1); }
+
+.commentary .graphic .picWarp img { width: 60px; height: 60px; }
+
+.graphic.hor figcaption { overflow: hidden; color: #9b4802; }
+
+.graphic.hor .picWarp { float: left; }
+
+.graphic.hor .picWarp img { width: 37px; height: 37px; border-radius: 50px; }
+
+.graphic.hor .conWarp { margin: 0 0 0 70px; min-height: 60px; }
+
+.graphic.hor figure { position: relative; }
+
+.graphic { line-height: 20px; }
+
+.icon.m1 { margin: 0 2px 0 0; }
+
+.icon.w3 { width: 15px; height: 15px; }
+
+.star { background-image: url(images/icon/star.png); }
+
+.star.active { background-image: url(images/icon/starActive.png); }
+
+.moreBtn { border-radius: 12px; background: #e7e7d0; color: #afaf8c; }
+
+.loadMoreBtn, .moreBtn { display: block; height: 34px; background: #E8E8E8; line-height: 34px; text-align: center; font-size: 12px; color: #A09C9C; }
+
+.dis-b { display: block; }
+
+.icon { position: relative; display: inline-block; background-size: 100%; background-repeat: no-repeat; background-position: 0 0; }
+
+.p10 { padding: 10px; }

@@ -1,0 +1,66 @@
+body, html {
+  height: 100%;
+  background: #fffff0;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #dbac72;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#container h4 {
+  height: 44px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #dbac72;
+  line-height: 44px;
+}
+
+#container h4 i {
+  position: absolute;
+  left: 10px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container main {
+  flex: 1;
+}
+
+#container footer {
+  height: 51px;
+  background: #fff;
+}
+
+#container footer ul {
+  height: 51px;
+  display: flex;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#container footer ul li {
+  flex: 1;
+}

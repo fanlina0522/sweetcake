@@ -1,0 +1,95 @@
+body, html {
+  height: 100%;
+  background: #fffff0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #dbac72;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#container h4 {
+  height: 44px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #dbac72;
+  line-height: 44px;
+}
+
+#container h4 span {
+  position: absolute;
+  left: 10px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container ul {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#container ul li {
+  float: left;
+  width: 46%;
+  background: #fff;
+  box-shadow: 1px 1px 1px 0 #eee;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+#container ul li img {
+  width: 90%;
+  text-align: center;
+}
+
+#container ul li p {
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+  text-overflow: ellipsis;
+  margin: 0 5px;
+  white-space: nowrap;
+  color: red;
+}
+
+#container ul li p:nth-of-type(1) {
+  border-bottom: 1px solid #eee;
+  color: black;
+}

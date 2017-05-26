@@ -1,0 +1,30 @@
+{
+  "name": "second-group",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "mongodb": "^2.2.27"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fanlina0522/cake.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fanlina0522/cake/issues"
+  },
+  "homepage": "https://github.com/fanlina0522/cake#readme",
+  "description": ""
+}

@@ -1,0 +1,29 @@
+/*重置样式表*/
+/*==========样式重置===========*/
+body,h1,h2,h3,h4,h5,h6,p,a,input,img,ul,l,ol,dl,dt,dd{
+	padding:0;
+	margin:0;}
+
+ul,ol{
+	list-style:none;}
+img{
+	display:block;
+	border:0;}
+input{
+	outline:none;
+}
+
+header,footer,section,nav,main{
+	display:block;
+}
+
+body{
+	font-size:12px;
+	font-family:Microsoft YaHei;
+	color:#dbac72;
+}
+a{
+	text-decoration:none;
+	font-size:12px;
+	color: #dbac72;
+}

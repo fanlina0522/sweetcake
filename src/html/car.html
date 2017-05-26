@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车-果吉多蛋糕</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/car.css">
+	 <!--<script  src ="../lib/require.js" data-main ="../js/car.js"></script>-->
+	<script src="../lib/jquery/jquery-3.1.1.js"></script>
+	<script src="../js/car.js"></script>
+	<script src="../js/goback.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="top">
+				<div class="top_l">
+					<a  class="iconfont icon-fanhui" href="#">
+						<!-- &lt; -->
+					</a>
+				</div>
+				<h4>
+					购物车
+				</h4>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<section class="wrap">
+				<div class="wrap_title">
+					<strong>收货地址</strong>
+					<p>白云区、黄埔区、禅城区、南海区需加10元运费</p>
+				</div>
+				<div class="addres">
+					<div class="no_addres">
+						<div class="add_addres">
+							<a href="vip/address.html">
+								<span>点击选择收货地址</span>
+								<i class="iconfont icon-xiayibu"></i>
+							</a>
+							
+						</div>
+					</div>										
+				</div>
+			</section>
+			<section class="list clearfix">
+				<header>
+					<p>购物清单</p>
+				</header>
+				<div class="goodslist">
+
+
+				</div>
+			</section>
+			<section class="choose">
+				<div class="pattern">
+					<span></span>
+				</div>
+				<header>
+					<h4>配件选购</h4>
+					<div class="head_r">
+						<span>滑动选择配件</span>
+						<img src="../img/finger.png" alt="滑动右边">
+					</div>
+				</header>
+				<div>
+					<div class="choose_scroll">
+						<ul>
+							<li class="active">男宝宝生日帽 Hat</li>
+							<li>女宝宝生日帽 Hat</li>
+							<li>叉碟 Dishware</li>
+							<li>数字蜡烛 Candle</li>
+							<li>发光生日帽Magic Hat</li>
+							<li>康乃馨礼盒（母亲节限定）</li>
+							<li>3D立体玫瑰贺卡Rose Card</li>
+							<li>曲奇饼干Cookies</li>
+							<li>环保保温包</li>
+							<li>蛋糕留声</li>
+						</ul>
+					</div>
+					<div class="choose_list">
+						<ul>
+							<li class="choose_in">
+								<div class="cho" id="parts1" title="男宝宝生日帽 Hat" data-price="¥ 3.00">
+									<div class="cho_l"><img src="../img/saved_resource(1).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">韩国进口萌系生日帽（只适合10岁以下小朋友使用，大朋友可能会让帽子显小）</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts2" title="女宝宝生日帽 Hat" data-price="¥ 3.00">
+									<div class="cho_l"><img src="../img/saved_resource(2).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">韩国进口萌系生日帽（只适合10岁以下小朋友使用，大朋友可能会让帽子显小）</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts3" title="叉碟 Dishware" data-price="¥ 1.00">
+									<div class="cho_l"><img src="../img/saved_resource(3).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">硬朗、可降解的精致分餐碟，不同于软塌塌的传统蛋糕纸盘，虽然都是一次性的，SweetMagic果吉多的分餐碟也绝对令你感觉更加健康，安全。</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts4" title="数字蜡烛 Candle" data-price="¥ 3.00">
+									<div class="cho_l"><img src="../img/saved_resource(4).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">棕榈油脂肪酸提炼而成，燃烧时间长，冒烟少，环保又卫生。（所需数字请在订单备注注明）</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts5" title="发光生日帽Magic Hat" data-price="¥ 10.00">
+									<div class="cho_l"><img src="../img/saved_resource(5).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">会发光的生日帽，成人、小孩均可佩戴。环保的PVC材质，三种发光模式，为派对增添气氛！</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts6" title="康乃馨礼盒（母亲节限定）" data-price="¥ 59.00">
+									<div class="cho_l"><img src="../img/saved_resource(6).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">云南农园直送的新鲜康乃馨，精美的包装，送妈妈的最佳首选。</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts7" title="3D立体玫瑰贺卡Rose Card" data-price="¥ 30.00">
+									<div class="cho_l"><img src="../img/saved_resource(7).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">进口的纯手工激光雕刻3D玫瑰花贺卡，上等纸张制成，每张贺卡都经过设计师的精心制作，层层筛选，送给TA的一定是最优秀的。</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts8" title="曲奇饼干Cookies" data-price="¥ 24.00">
+									<div class="cho_l"><img src="../img/saved_resource(8).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">香浓酥脆的曲奇饼干，一罐约160g，共有六种口味，如需添加到购物车，请进入蛋糕名录→手工曲奇。</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts9" title="环保保温包"  data-price="¥ 20.00">
+									<div class="cho_l"><img src="../img/saved_resource(9).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">SweetMagic果吉多特制的环保型保温包。可爱清凉的设计，能将你心爱的蛋糕新鲜口感延长更久，保冷3-4小时。采用环保的高档珍珠棉材质，可循环多次使用，好看又环保。</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="cho" id="parts10" title="蛋糕留声" data-price="¥ 0.00">
+									<div class="cho_l"><img src="../img/saved_resource(10).png" alt=""></div>
+									<div class="cho_r">
+										<p class="title">让你的蛋糕会说话。如果您是为别人订的蛋糕，你可以在公众号菜单点击【蛋糕留声】并拍下此配件，完成之后，让收货人扫描二维码即可收听你的留言。</p>
+										<div class="add_btn"><span class="add">+ 加入购物车</span></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="pattern">
+					<span></span>
+				</div>
+			</section>
+			<section class="matchingWarp">
+				<div class="brand">
+					<article>
+						<header>
+							<h4>巧克力牌（免费）</h4>
+							<div class="header_r">
+								<p class="checkbox">
+									<input type="radio" id="chocolateCard1" name="chocolateCard" value="1">
+									<label for="chocolateCard1">需要</label>
+								</p>
+								<p class="checkbox">
+									<input type="radio" id="chocolateCard2" name="chocolateCard" value="2">
+									<label for="chocolateCard2">不需要</label>
+								</p>
+							</div>
+						</header>
+						<div class="chocolate">
+							<ul>
+								<li class="f1">
+			                      <p class="checkbox">
+			                        <input type="radio" id="chocolateCardType0" name="chocolateCardType" value="0">
+			                        <span class="mainColor"><label for="chocolateCardType0">生日快乐</label></span>
+			                      </p>
+			                    </li>
+			                    <li class="f2 ta-c">
+			                      <p class="checkbox dis-ib">
+			                        <input type="radio" id="chocolateCardType1" name="chocolateCardType" value="1">
+			                        <span class="mainColor"><label for="chocolateCardType1">Happy Birthday</label></span>
+			                      </p>
+			                    </li>
+			                    <li class="f1 f3">
+			                      <p class="checkbox fr">
+			                        <input type="radio" id="chocolateCardType2" name="chocolateCardType" value="2">
+			                        <span class="mainColor"><label for="chocolateCardType2">其他</label></span>
+			                      </p>
+			                    </li>
+							</ul>
+							<div class="other">
+								<input type="text" id="chocolateCardTxt" name="chocolateCardTxt" maxlength="8">
+							</div>
+						</div>
+					</article>					
+				</div>
+				<div class="greeting">
+					<article>
+						<header>
+							<h4>祝福贺卡（免费）</h4>
+							<div class="header_r">
+								<p class="checkbox">
+									<input type="radio" id="greetingCard1" name="greetingCard" value="1">
+									<label for="greetingCard1">需要</label>
+								</p>
+								<p class="checkbox">
+									<input type="radio" id="greetingCard2" name="greetingCard" value="2">
+									<label for="greetingCard2">不需要</label>
+								</p>
+							</div>
+						</header>
+						<div class="greetingMessage">
+							<textarea name="greetingMessageText" id="greetingMessageText" ></textarea>
+						</div>
+					</article>
+				</div>
+				<div class="discount">
+					<article>
+						<header>
+							<h4>优惠券</h4>
+						</header>
+						<div class="userEnvsList">
+                            <div class="react">
+                        		<div id="uEnv-1" data-id="1" class="envsItem hidden"  data-req="168" data-dis="10">
+                           			 <span class="mainColor">新用户立减¥10(全部蛋糕)</span>
+                            		<i class=""></i>
+                        		</div>
+                          	</div>
+                          	 <div class="react">
+                        		<div id="uEnv-1" data-id="1" class="envsItem hidden"  data-req="168" data-dis="10">
+                           			 <span class="mainColor">新用户立减¥10(全部蛋糕)</span>
+                            		<i class=""></i>
+                        		</div>
+                          	</div>
+						</div>
+					</article>
+				</div>
+				<div class="dis">
+					<article>
+						<header>
+							<h4>配送日期</h4>
+						</header>
+						<div class="dis_date">
+							<input type="date" id="now_day" value="2017-05-23">
+						</div>
+					</article>
+				</div>
+				<div class="dis">
+					<article>
+						<header>
+							<h4>配送时间</h4>
+						</header>
+						<div class="dis_time">
+							<select id="selectTtime" id="dis_time" class="mainColor">
+								<option value="0">10:00-11:00</option>
+								<option value="1">10:30-11:30</option>
+								<option value="2">11:00-12:00</option>
+								<option value="3">11:30-12:30</option>
+								<option value="4">12:00-13:00</option>
+								<option value="5">12:30-13:30</option>
+								<option value="6">13:00-14:00</option>
+								<option value="7">13:30-14:30</option>
+								<option value="8">14:00-15:00</option>
+								<option value="9">14:30-15:30</option>
+								<option value="10">15:00-16:00</option>
+								<option value="11">15:30-16:30</option>
+								<option value="12">16:00-17:00</option>
+								<option value="13">16:30-17:30</option>
+								<option value="14">17:00-18:00</option>
+								<option value="15">17:30-18:30</option>
+								<option value="16">18:00-19:00</option>
+								<option value="17">18:30-19:30</option>
+								<option value="18">19:00-20:00</option>
+								<option value="19">19:30-20:30</option>
+								<option value="20">20:00-21:00</option>
+								<option value="21">20:30-21:30</option>
+							</select>
+							<p>如需加当日急单，请致电400-998-2928说明情况，我们会尽全力为您安排！</p>
+						</div>
+					</article>
+				</div>
+				<div class="disphone">
+					<article>
+						<header>
+							<h4>订购人手机</h4>
+						</header>
+						<div class="dis_phone">
+							<input type="text" placeholder="订购人手机号码" id="dis_phone">
+							<p>重要!必填!</p>
+						</div>
+					</article>
+				</div>
+				<div class="disless">
+					<article>
+						<header>
+							<h4>订单备注</h4>
+						</header>
+						<div class="dis_less">
+							<input type="text" id="input-remark" placeholder="选填，可填写您的特殊要求，如颜色、尺码等">
+							<p>
+									温馨提示：<br>
+		                        1.请您再次确认订单详情，如需修改信息请提前7小时致电客服，否则可能会产生费用（如临时更改地址等）。<br>
+		                        2.请在收货时间段务必保持手机畅通有人接听，配送专员等待20分钟以上无法联系，将自动进行下一位配送，您的配送时间可能会无限期延迟，并可能会产生额外费用。<br>
+		                        3.请务必当面要求检查蛋糕外观，确认完好无损并签收。<br>
+		                        4.如需开具发票，请致电客服电话400-998-2928说明抬头和项目。<br>
+		                        5.所有优惠券（不限种类，包括纸质券、电子券等）都不得同时使用。
+		                    </p>
+						</div>
+					</article>
+				</div>
+				<div class="charging">
+					<p class="freight">运费 : <span id="freight">¥0.00</span></p>
+					<p class="Red">红包 : <span id="Red">¥0.00</span></p>
+					<p class="totalPrice">总计 : <span id="totalPrice">¥0.00</span></p>
+				</div>
+				<div class="buy_box">
+					<div class="button" id="payment-btn">微信安全支付</div>
+				</div>
+				
+			</section>
+		</div>
+	</main>
+</body>
+</html>

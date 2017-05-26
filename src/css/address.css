@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/*重置样式表*/
+/*==========样式重置===========*/
+@import url(../font/iconfont.css);
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, l, ol, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+header, footer, section, nav, main {
+  display: block;
+}
+
+body {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  color: #dbac72;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #dbac72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+html, body {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #fffff0;
+}
+
+.container {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+#box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#box header {
+  height: 44px;
+}
+
+#box header .top {
+  display: flex;
+  height: 44px;
+  background: #dbac72;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+}
+
+#box header .top .top_l {
+  width: 46px;
+  height: 44px;
+  float: left;
+  position: absolute;
+  font-size: 24px;
+  margin-left: 2px;
+}
+
+#box header .top .top_l a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  font-size: 24px;
+}
+
+#box header .top h4 {
+  font-size: 15px;
+  width: 100%;
+}
+
+#box main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+#box main .myAddress {
+  margin-top: 15px;
+  background-color: #E8E8E8;
+}
+
+#box main .myAddress li {
+  padding: 0 20px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+
+#box main .myAddress li span.mr_btn {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: red;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#box main .myAddress li p {
+  line-height: 30px;
+  color: black;
+  font-size: 16px;
+}
+
+#box main .myAddress li p:nth-of-type(2) {
+  color: #080808;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+#box main .myAddress li p:nth-of-type(3) {
+  text-align: right;
+  font-size: 14px;
+}
+
+#box main .myAddress li p:nth-of-type(3) span:nth-of-type(1) {
+  padding-right: 50px;
+}
+
+#box main .addAddress {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#box main .addAddress a {
+  display: inline-block;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  background: #dbac72;
+  border-radius: 10px;
+}

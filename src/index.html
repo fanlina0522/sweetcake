@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script src="lib/jquery/jquery-2.1.1.min.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/index.js"></script>
+	<script src="lib/common/global.js"></script>
+	<script type="text/javascript" src="lib/jquery.lazyload.js"></script>
+	<script>
+		$(document).ready(function () {
+			 var mySwiper = new Swiper ('.swiper-container', {
+			    direction: 'horizontal',
+			    loop: true,
+			    // 如果需要分页器
+			    pagination: '.swiper-pagination',
+			    autoplay:3000,
+			    speed:1000,
+			    autoplayDisableOnInteraction:false
+			  })
+		})
+	</script>
+</head>
+<body>
+	<div id="container">
+		<!--侧边栏-->
+		<div class="category" >
+			<img src="img/banner.jpg">
+			<ul class="webkit-scroll">
+				<a href="html/Group-list.html?name=all" title="all" class="moreArrow">全部蛋糕 All Cake</a>
+				<a href="html/Group-list.html?name=hot" title="hot" class="moreArrow">畅销新品Hot Sales</a>
+				<a href="html/Group-list.html?name=naked" title="naked" class="moreArrow">裸蛋糕 Naked Cakes</a>
+				<a href="html/Group-list.html?name=quartet" title="quartet" class="moreArrow">四拼蛋糕 Quartet</a>
+				<a href="html/Group-list.html?name=hh" title="hh" class="moreArrow">双拼蛋糕 H&amp;H Cakes</a>
+				<a href="html/Group-list.html?name=love" title="love" class="moreArrow">浪漫时刻Cake for love</a>
+				<a href="html/Group-list.html?name=Kids" title="Kids" class="moreArrow">卡通蛋糕For Kids</a>
+				<a href="html/Group-list.html?name=cookies" title="cookies" class="moreArrow">手工曲奇Cookies</a>
+				<a href="html/Group-list.html?name=new" title="new-" class="moreArrow">云南新鲜花盒[New~]</a>
+				<a href="html/Group-list.html?name=mousse" title="mousse" class="moreArrow">慕斯蛋糕 Mousse</a>
+				<a href="html/Group-list.html?name=cream" title="cream" class="moreArrow">乳脂奶油蛋糕Anchor Cream Cakes</a>
+				<a href="html/Group-list.html?name=cheese" title="cheese" class="moreArrow">芝士蛋糕 Cheese Cakes</a>
+				<a href="html/Group-list.html?name=mille" title="mille" class="moreArrow">千层酥 Mille-feuilles</a>
+				<a href="html/Group-list.html?name=chocolate" title="chocolate" class="moreArrow">巧克力蛋糕 Chocolate Cakes</a>
+				<a href="html/Group-list.html?name=cup" title="cup" class="moreArrow">杯子蛋糕 Cupcakes</a>
+			</ul>
+		</div>
+		<div class="show"></div>
+		<main>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="img/index/homeLbt1.jpg"></div>
+			        <div class="swiper-slide"><img src="img/index/homeLbt2.jpg"></div>
+			        <div class="swiper-slide"><img src="img/index/homeLbt3.jpg"></div>
+			        <div class="swiper-slide"><img src="img/index/homeLbt4.jpg"></div>
+			        <div class="swiper-slide"><img src="img/index/homeLbt5.jpg"></div>
+			        <div class="swiper-slide"><img src="img/index/homeLbt6.jpg"></div>
+			        <div class="swiper-slide"><img src="img/index/homeLbt7.jpg"></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>   
+			</div>
+			<div class="search">
+				<div class="left">
+					<i class="iconfont icon-fenlei"></i><br><span>分类</span>
+				</div>
+				<div class="center">
+					<input type="search" placeholder="  搜一搜，找到你想要的" id="keyword">
+					<img src="img/index/sousuo.png" id="searchKey">
+				</div>
+				<div class="right">
+					<i class="iconfont icon-shouji"></i>
+				</div>
+			</div>
+			<div class="hotlist">
+				<h1>畅销蛋糕 Hot Sale</h1>
+				<ul class="hotCake clearfix">
+					<!--<li>-->
+						<!--<a href="#">-->
+							<!--<h4>四季</h4>-->
+							<!--<h4>Four Season</h4>-->
+							<!--<img src="img/index/homelist1.jpg">-->
+						<!--</a>-->
+
+					<!--</li>-->
+				</ul>
+			</div>
+			<div class="navlink">
+				<ul>
+					<li><a href="html/navLink/freeEat.html">免费品尝</a></li>
+					<li><a href="html/navLink/order.html">如何订购</a></li>
+					<li><a href="html/navLink/takeGoods.html">如何收货</a></li>
+					<li><a href="html/navLink/accounts.html">如何结账</a></li>
+				</ul>
+				订购热线：400-998-2928 | 投诉电话：020-39022623 <br>
+				客服邮箱：sweetmagichina@163.com <br>
+				2016-2017 粤ICP备11021841号
+			</div>
+		</main>
+		<footer>
+			<ul>
+				<li>
+					<a href="index.html">
+						<i class="iconfont icon-icon"></i><br>
+						<span>首页</span>
+					</a>
+				</li>
+				<li class="footshow">
+					<a href="#">
+						<i class="iconfont icon-mulu"></i><br>
+						<span>蛋糕名录</span>
+					</a>
+				</li>
+				<li>
+					<a href="html/car.html">
+						<i class="iconfont icon-gouwuche"></i><br>
+						<span>购物车</span>
+					</a>
+				</li>
+				<li>
+					<a href="html/vip/memberCenter.html">
+						<i class="iconfont icon-personal"></i><br>
+						<span>会员中心</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+body, html {
+  height: 100%;
+  background: #fffff0;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #dbac72;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#container header h4 {
+  height: 44px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #dbac72;
+  line-height: 44px;
+}
+
+#container header h4 span {
+  position: absolute;
+  left: 10px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container header ul {
+  display: flex;
+  height: 38px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+#container header ul li {
+  flex: 1;
+  text-align: center;
+  color: #dbac72;
+  font-size: 12px;
+  line-height: 38px;
+}
+
+#container header ul li.active {
+  color: #aa0000;
+  border-bottom: 2px solid #aa0000;
+}
+
+#container main {
+  flex: 1;
+  overflow-y:auto;
+}
+
+#container main .orMsgList {
+  /*background-color: #fff;*/
+}
+
+#container main .orMsgList li{
+  margin-bottom:10px;
+  background-color: #fff;
+}
+
+#container main .orMsgList li > p {
+  position: relative;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#container main .orMsgList li > p .orStatus {
+  position: absolute;
+  color: #aa0000;
+  right: 10px;
+}
+
+#container main .orMsgList li .or_msg .or_up {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+#container main .orMsgList li .or_msg .or_up .or_up_left {
+  float: left;
+  width: 30%;
+}
+
+#container main .orMsgList li .or_msg .or_up .or_up_left img {
+  width: 100%;
+}
+
+#container main .orMsgList li .or_msg .or_up .or_up_right {
+  float: left;
+  width: 67%;
+  padding-left: 10px;
+  position: relative;
+}
+
+#container main .orMsgList li .or_msg .or_up .or_up_right .goodsnorms {
+  padding-top: 20px;
+  line-height: 45px;
+  color: #00aa00;
+}
+
+#container main .orMsgList li .or_msg .or_up .or_up_right .goodsqty {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#container main .orMsgList li .or_msg .or_down {
+  padding: 0 10px;
+}
+
+#container main .orMsgList li .or_msg .or_down > p {
+  text-align: right;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+#container main .orMsgList li .or_msg .or_down .btn {
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+#container main .orMsgList li .or_msg .or_down .btn input {
+  box-sizing: border-box;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+#container main .orMsgList li .or_msg .or_down .btn #ordetails {
+  border: 0;
+  background: #dbac72;
+  color: #fff;
+}
+
+#container footer {
+  height: 51px;
+  background: #fff;
+}
+
+#container footer ul {
+  height: 51px;
+  display: flex;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#container footer ul li {
+  flex: 1;
+}
+

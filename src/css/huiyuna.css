@@ -1,0 +1,35 @@
+body, html {
+  height: 100%;
+}
+
+#container img {
+  width: 100%;
+}
+
+#container footer {
+  margin-top: 10px;
+  width: 100%;
+  height: 128px;
+  background: #fffff0;
+  font-size: 10px;
+  color: #dbac72;
+  text-align: center;
+}
+
+#container footer ul {
+  padding: 20px 0;
+}
+
+#container footer ul li {
+  display: inline-block;
+  padding: 0  5px;
+}
+
+#container footer ul li a {
+  border-right: 1px solid #dbac72;
+  padding-right: 10px;
+}
+
+#container footer ul li:nth-last-child(1) a {
+  border-right: 0;
+}

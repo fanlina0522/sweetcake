@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>免费品尝</title>
+	<link rel="stylesheet" type="text/css" href="../../css/freeEat.css">
+	<link rel="stylesheet" href="../../font/iconfont.css">
+	<script src="../../lib/jquery/jquery-3.1.1.js"></script>
+	<script src="../../js/goback.js"></script>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+	<div id="container">
+		<h4><span class="iconfont icon-fanhui"></span>免费品尝</h4>
+		<main>
+			<div class="box">    
+			    <div class="articleContent">
+			      <strong>温馨提示：</strong>
+			      <p>试吃活动资源有限，所以我们会对申请进行筛选，对于同一公司多个部门的申请，或者同一地址的重复申请，我们可能无法全部满足。对于未能成功申请的会员，果吉多会通过邮件告知您，但不会给出具体的未成功申请的理由。请各位会员谅解！</p>
+
+			      <strong>尊敬的客户：</strong>
+			      <p>欢迎您加入到果吉多免费品尝活动的队列中来（本品尝活动仅针对公司，不针对非公司组织的私人聚会）</p>
+
+			      <strong>申报活动条件：</strong>
+			      <p>1、您的公司从未参加过sweetmagic举办的免费品尝活动。</p>
+			      <p>2、贵公司可提供例如茶水间、休息室、会议室等可以品尝蛋糕的区域。 </p>
+			      <p>3、您的公司可以参加品尝的人数在16人以上。</p>
+			      <p>4、蛋糕需要您和您的同事们同时现场品尝（活动时间约25分钟）。 </p>
+			      <p>5、讲解产品需要5分钟，请您协助sweetmagic市场人员做好试吃活动的组织工作。 </p>
+			      <p>6、如您公司有采购需求、福利标准，请您协助我们的市场专员进行了解。 </p>
+
+			      <strong class="red">如您能接受以上条件， 请您正确填写下列信息：</strong>
+			      <br><br>
+			      <form onsubmit="javascript:alert('申请成功')" method="post" action="/?/Uc/freeTaste" name="frm">
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您的公司名称</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="name" id="free_name" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">地区</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <label class="selectList">
+				              <select>
+				                <option selected="selected" value="广州市">广州</option>
+				              </select>
+				              </label>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">详细地址</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="address" id="free_address" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您的公司人数</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <label class="selectList">
+				              <select name="count">
+				                <option selected="selected" value="20人-50人">20人-50人</option>
+				                <option value="50人-100人">50人-100人</option>
+				                <option value="100人-200人">100人-200人</option>
+				                <option value="200人以上">200人以上</option>
+				              </select>
+				              </label>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">申请品尝活动的部门</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="department" id="free_branch" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您公司的需求</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <label class="selectList">
+				              <select name="demand" id="free_requirement">
+				                <option selected="selected" value="">请选择...</option>
+				                <option value="员工生日">员工生日</option>
+				                <option value="客户关怀">客户关怀</option>
+				                <option value="茶歇">茶歇</option>
+				                <option value="会议">会议</option>
+				                <option value="庆典">庆典</option>
+				                <option value="开业">开业</option>
+				              </select>
+				              </label>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">品尝地点</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <label class="selectList">
+				              <select name="place">
+				                <option selected="selected" value="会议室">会议室</option>
+				                <option value="茶水间">茶水间</option>
+				                <option value="餐厅">餐厅</option>
+				                <option value="休息间">休息间</option>
+				                <option value="工作区">工作区</option>
+				                <option value="其他">其他</option>
+				              </select>
+				              </label>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">参与活动人员数量</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <label class="selectList">
+				              <select name="join_count">
+				                <option selected="selected" value="15人-20人">15人-20人</option>
+				                <option value="20人-40人">20人-40人</option>
+				              </select>
+				              </label>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">活动时间</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <label class="selectList">
+				              <select name="time">
+				                <option selected="selected" value="14：30—18：30">14：30—18：30</option>
+				              </select>
+				              </label>
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您的职位</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="u_position" id="free_who" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您的姓名</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="u_name" id="free_who" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您的办公电话</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="u_tel" id="u_tel" onkeyup="value=value.replace(/[^\d-]/g,'')" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">您的手机号码</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="u_phone" id="u_phone" onkeyup="value=value.replace(/[^\d-]/g,'')" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34">E-MAIL</li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input onchange=" isEmail(this.value)" name="u_email" id="user_email" type="text" required="">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+
+				      <div class="inputItem">
+				        <ul class="flexBox hor horSpacing">
+				          <li class="f2 lh34"></li>
+				          <li class="f4">
+				            <div class="inputBox">
+				              <input name="created" type="hidden" value="2017-05-23 15:49:20">
+				              <input class="bcMainColor" type="submit" value="确定"style="background-color:#dbac72;">
+				            </div>
+				          </li>
+				        </ul>
+				      </div>
+			      </form>
+
+			      <div class="inputItem">
+			        注：试吃申请提交后，果吉多市场部同事会在7个工作日内与您联系，请注意查收邮件或保持手机畅通。
+			      </div>
+			    </div>
+			    <div class="navlink">
+					<ul>
+						<li><a href="freeEat.html">免费品尝</a></li>
+						<li><a href="order.html">如何订购</a></li>
+						<li><a href="takeGoods.html">如何收货</a></li>
+						<li><a href="accounts.html">如何结账</a></li>
+					</ul>
+					订购热线：400-998-2928 | 投诉电话：020-39022623 <br>
+					客服邮箱：sweetmagichina@163.com <br>
+					2016-2017 粤ICP备11021841号
+				</div>
+  			</div>
+		</main>
+	</div>
+</body>
+</html>

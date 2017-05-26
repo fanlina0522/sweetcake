@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>商品详情页</title>
+	<link rel="stylesheet" href="../css/normal.css">
+	<link rel="stylesheet" href="../css/goodsdetail.css">
+	<script src="../js/require.js" data-main="../js/goodsdetail.js"></script>
+	<script src="../lib/common/global.js"></script>
+</head>
+<body>
+	<!-- headerPop -->
+	<div id="headerPop">
+		<header>
+			<ul class="iconWrap left">
+				<li>
+					<span class="icon backRound" onclick="javascript:history.back(-1);">
+						<a href=""></a>
+					</span>
+				</li>
+			</ul>
+			<ul class="iconWrap right">
+				<li>
+					<span class="icon shareRound" id="share">
+						
+					</span>
+				</li>
+				<li>
+					<span class="icon home">
+						
+					</span>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<!-- headerPop -->
+
+	<!-- touchslider -->
+	<div class="touchslider" id="touchslider" style="overflow: hidden;height: 375px;">
+		<div class="touchslider-viewport">
+			<div class="touchslider-item">
+
+			</div>
+		</div>
+		<div class="touchslider-nav">
+		</div>
+	</div>
+	<!-- touchslider -->
+
+	<!-- wrap1 -->
+	<div class="wrap">
+		<hgroup class="name">
+			<h1></h1>
+			<h2></h2>
+		</hgroup>
+		<p class="dec"></p>
+    </div>
+	
+	<!-- wrap2 -->
+	<div class="wrap">
+		<dl class="typeList">
+			<dd>
+			    <span class="icon w3 typeList001"></span>
+			</dd>
+			<dd>
+			    <span class="icon w3 typeList002">
+			    </span>                
+			</dd>
+			<dd>
+			    <span class="icon w3 typeList003"></span>
+			</dd>
+			<dd>
+			    <span class="icon w3 typeList004"></span>甜度：
+			    <p class="starRating">
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    <span></span>
+				    <span></span>
+			    </p>
+			<!-- 数据库数据 -->
+			<input type="hidden" id="starRating" value="2">
+			</dd>
+			<dd>
+			    <span class="icon w3 typeList005"></span>
+			</dd>
+			<dd>
+			    <span class="icon w3 typeList006"></span>
+			</dd>
+			<dd>
+			    <span class="icon w3 typeList007"></span>
+			</dd>
+		</dl>
+    </div>
+	
+	<!-- cake_side -->
+	<div class="wrap">
+		<div class="popWin show">
+			<header>&nbsp;&nbsp;&nbsp;&nbsp;选择商品规格</header>
+			<section class="contentWarp">
+				<div class="main webkit-scroll scrollY" id="popContentMain">
+					<ul class="selectTypeList">
+					</ul>
+					<!-- second -->
+					<ul class="fl numberSetWarp">
+                        <a class="del setNum" type="del"> - </a>
+                        <input type="text" id="num" name="" value="1" readonly>
+                        <a class="add setNum" type="add"> + </a>
+                    </ul>  
+				</div>
+			</section>
+		</div>
+	</div>
+
+	<!-- wrap4 -->
+	<div class="wrap matching">
+		<div class="txt">
+		1磅=454g 纯手工制作，尺寸作为参考，以重量为准，允许有3%左右的误差。<br>
+			<span class="red">特别提示：</span>5磅以上的蛋糕，请与客服人员联系，我们将派专人为您跟踪服务。<br>
+			跟踪服务电话：<span class="red">400-998-2928</span><br>
+			<span class="red">温馨提示:</span><br>
+			1、广州市主城区（萝岗区、花都区除外）免费送货。<br>
+			2、蛋糕在收到后2-3小时内食用最佳。<br>
+			3、如对上述食材有过敏经历者，请选择其它款蛋糕。<br>
+			4、蛋糕规格及免费配送餐具。
+		</div>
+	</div>
+
+	<!-- wrap5 -->
+	<div class="wrap matching">
+		 <p class="font14">配套餐具：</p>
+		 <div class="tabWarp">
+		 	<ul class="flexBox hor matchingMenu">
+		 		<li class="f1 active">1.2磅</li>
+			    <li class="f1">2.2磅</li>
+			    <li class="f1">3.0磅</li>
+			    <li class="f1">5.0磅</li>
+			    <li class="shade" style="display: block"></li>
+		 	</ul>
+		 	<div class="matchingCon">
+		 		<div class="con tabCon" style="display: block">
+		 			<p><strong>尺寸：</strong>13 ×13 (CM)</p>
+				    <p><strong>适合人数：</strong>2-4人食用</p>
+				    <ul class="flexBox hor">
+				        <li class="f1">
+				           <span class="icon w1 typeList008"></span>
+				           <strong>蛋糕刀</strong>1把
+				        </li>
+				        <li class="f1">
+				           <span class="icon w1 typeList009"></span>
+				           <strong>餐叉</strong>5把
+				        </li>
+				        <li class="f1">
+				           <span class="icon w1 typeList010"></span>
+				           <strong>蛋糕盘</strong>5个
+				        </li>
+				        <li class="f1">
+				           <span class="icon w1 typeList011"></span>
+				           <strong>蜡烛</strong>1包
+				        </li>
+				    </ul>
+		 		</div>
+		 		<div class="con tabCon">
+			      <p><strong>尺寸：</strong>17×17 (CM)</p>
+			      <p><strong>适合人数：</strong>5-8人食用</p>
+			      <ul class="flexBox hor">
+			        <li class="f1">
+			          <span class="icon w1 typeList008"></span>
+			          <strong>蛋糕刀</strong>
+			          1把
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList009"></span>
+			          <strong>餐叉</strong>
+			          10把
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList010"></span>
+			          <strong>蛋糕盘</strong>
+			          10个
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList011"></span>
+			          <strong>蜡烛</strong>
+			          1包
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="con tabCon">
+			      <p><strong>尺寸：</strong>23×23 (CM)</p>
+			      <p><strong>适合人数：</strong>10-12人食用</p>
+			      <ul class="flexBox hor">
+			        <li class="f1">
+			          <span class="icon w1 typeList008"></span>
+			          <strong>蛋糕刀</strong>
+			          1把
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList009"></span>
+			          <strong>餐叉</strong>
+			          15把
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList010"></span>
+			          <strong>蛋糕盘</strong>
+			          15个
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList011"></span>
+			          <strong>蜡烛</strong>
+			          1包
+			        </li>
+			      </ul>
+			    </div>
+			    <div class="con tabCon">
+			      <p><strong>尺寸：</strong>28×28 (CM)</p>
+			      <p><strong>适合人数：</strong>15-25人食用</p>
+			      <ul class="flexBox hor">
+			        <li class="f1">
+			          <span class="icon w1 typeList008"></span>
+			          <strong>蛋糕刀</strong>
+			          1把
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList009"></span>
+			          <strong>餐叉</strong>
+			          25把
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList010"></span>
+			          <strong>蛋糕盘</strong>
+			          25个
+			        </li>
+			        <li class="f1">
+			          <span class="icon w1 typeList011"></span>
+			          <strong>蜡烛</strong>
+			          1包
+			        </li>
+			      </ul>
+			    </div>
+		 	</div>
+		 </div>
+	</div>
+
+	<!-- comment -->
+	<div class="commentary p10">
+		<div class="item">
+            <ul class="graphic hor">
+                <figure>
+	                <div class="picWarp">
+	                    <img src="" alt="">
+	                </div>
+	                <div class="conWarp">
+	                    <figcaption>carmen chan</figcaption>
+	                    <p class="starList" data-num="5">
+		                    <span class="icon w3 star active"></span>
+		                    <span class="icon w3 star"></span>
+		                    <span class="icon w3 star"></span>
+		                    <span class="icon w3 star"></span>
+		                    <span class="icon w3 star"></span>
+	                    </p>
+	                    <p>非常棒！榴莲挺多的，真材实料，甜度比例合适，吃了不腻！还送了花?，服务态度一如既往的好！点赞！</p>
+	                </div> 
+                </figure>
+            </ul>
+        </div>
+	</div>	
+
+	<!-- more_comment -->
+	<div class="more_comment">
+		 <a class="moreBtn">查看更多评论</a>
+	</div>
+
+	<!-- customer_love -->
+	<div class="customer_love">
+		<section>
+			<header>
+				<h1 class="title">猜你喜欢</h1>
+			</header>
+			<ul class="list">    
+	            <figure> 
+	                <hgroup>
+	                    <h4>雪域榴莲芝士</h4>
+	                    <h5>Durian Cheese Cake</h5>
+	                </hgroup>
+	                <div class="pic">
+	                    <img src="../img/a_01.jpg" alt='雪域榴莲芝士' width="100%">
+	                </div>
+	            </figure>    
+	            <figure > 
+	                <hgroup>
+	                    <h4>玫瑰裸蛋糕</h4>
+	                    <h5>Naked Cake with fresh roses</h5>
+	                </hgroup>
+	                <div class="pic">
+	                    <img src="../img/b_01.jpg" alt='玫瑰裸蛋糕' width="100%">
+	                </div>
+	            </figure>    
+	            <figure > 
+	                <hgroup>
+	                    <h4>泡泡池</h4>
+	                    <h5>Bubble Pool</h5>
+	                </hgroup>
+	                <div class="pic">
+	                    <img src="../img/cheea_01.jpg" alt='泡泡池' width="100%">
+	            
+	                </div>
+	            </figure>    
+	            <figure> 
+	                <hgroup>
+	                    <h4>环保保温包</h4>
+	                    <h5>fresh roses</h5>
+	                </hgroup>
+	                <div class="pic">
+	                    <img src="../img/cheeb_01.jpg" alt='环保保温包' width="100%">
+
+	                </div>
+	            </figure>    
+            </ul>
+		</section>
+	</div>
+
+	<!-- footerPop -->
+	<div id="footerPop">
+		<div class="carFooter">            
+		    <a class="btn fr" id="addcart-button" data-prom="0" data-add="1" data-num="1">加入购物车</a>                   
+			<a id="toCart" class="toCar fr"><i>0</i></a>
+			<div class="count fl">
+		    <!-- 价格显示 -->
+		    <div class="pd-dsc clearfix">
+		        <span style="color:#000">&nbsp;&nbsp;总价格：</span>
+		        <span id="pd-sale-price" class="prices marketPrice price"><!-- &yen;198.00 --></span>
+		    </div>
+		</div>
+    </div>
+</body>
+</html>

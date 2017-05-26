@@ -1,0 +1,38 @@
+$e:#dbac72;
+$b:#f2f2f2;
+$t:#9b4802;//car title
+@import 'base.scss';
+
+*{margin:0;padding:0;}
+
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+html,body{
+	height: 100%;
+	// width:375px;
+	max-width: 770px;
+	// min-width:375px;
+	width: 100%;	
+	display: flex;	
+	flex-direction: column;
+	margin:0 auto;
+	background:#fffff0;
+}
+
+.container{
+	height: 100%;
+	// width:375px;
+	max-width: 770px;
+	// min-width:375px;
+	width: 100%;	
+	display: flex;	
+	flex-direction: column;
+	margin:0 auto;
+}
+

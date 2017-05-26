@@ -1,0 +1,240 @@
+
+@charset "utf-8";
+/* CSS Document */
+/* ================================= From network ==================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, figcaption, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video, main, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+body {
+  margin: 0;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  height: 100%;
+  -webkit-text-size-adjust:none;
+  background: #fffff0;
+}
+ul { list-style: none; }
+.curp { cursor: pointer; }
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+  outline: none;
+}
+img {
+  border: 0;
+}
+input {
+  vertical-align: middle;
+}
+
+
+@media screen and (min-width: 320px){
+    html{
+      font-size:16px;
+    }
+}
+@media screen and (min-width: 650px){
+    html{
+      font-size:20px;
+    }
+}
+@media screen and (min-width:991px){
+    html{
+      font-size:24px;
+    }
+}
+
+/*头部*/
+#headerPop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+#headerPop .headerWarp {
+  position: absolute;
+  left: 0;
+  right: 0; }
+#headerPop .headerWarp .iconWarp {
+  position: relative;
+  height: 2.75rem;
+  background: #dbac72;
+  line-height: 2.75rem; }
+  #headerPop .iconWarp .iconWarp-left{
+    float: left;
+    padding-left:0.25rem;
+    height: 100%;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  #headerPop .iconWarp .iconWarp-left span{
+    display: inline-block;
+    width: 1.875rem;
+    height:1.875rem;
+    margin: 0.4375rem 0 0 0;
+   background: url(../img/back.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+   #headerPop .iconWarp .title{
+     font-weight: normal;
+    text-align: center;
+    font-size:0.9375rem;
+    color: #fff;
+  }
+/*商品列表*/
+#mainWarp{
+ padding-top: 2.75rem;
+}
+#mainWarp .product {
+    padding: 0.625rem 0.3125rem;
+    margin-bottom:2.75rem;
+}
+#mainWarp li{
+    float: left;
+    width: 50%;
+    margin: 0 0 0.625rem 0;
+}
+#mainWarp li .product_a{
+  display: block;
+  padding: 0 0.3125rem;
+}
+#mainWarp li .product_a img{
+  width:100%;
+  height: 100%;
+}
+#mainWarp .product li .conWarp {
+    padding: 0.375rem 0.5rem;
+    background: #f2f2e7;
+    color: #dbac72;
+
+}
+#mainWarp .product li .conWarp h4{
+        font-weight: normal;
+}
+#mainWarp .product li .conWarp h5{
+        font-weight: normal;
+}
+
+/*侧边栏*/
+.category {
+    position: fixed;
+    width: 70%;
+    top: 0;
+    bottom: 0;
+    left:-888px;
+    background: #fefef4;
+    z-index: 10000;
+   /* opacity:0;*/
+    display: none;
+  }
+.category img{
+    border: 0;
+    vertical-align: bottom;
+    width:100%;
+   height:11.4375rem;
+}
+.category ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 11.4375rem;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.category a {
+    display: block;
+    position: relative;
+    padding: 0.9375rem;
+    border-bottom: 1px solid #f2f2f2;
+    color: #9b4802;
+}
+
+/*右侧小图标*/
+#asidePopIcon {
+    position: fixed;
+    bottom: 3.75rem;
+    right: 0.625rem;
+    z-index: 999999;
+
+}
+#asidePopIcon .popIcon .link {
+    position: relative;
+    display: block;
+    width: 1.875rem;
+    height: 1.875rem;
+    margin: 0.625rem 0 0 0;
+    border-radius: 50px;
+    overflow: hidden;
+  background: url(../img/popPhone.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+#asidePopIcon .popIcon .bg {
+    position: absolute;
+    z-index: -1;
+    background: #dbac72;
+    border-radius: 50px;
+     width: 1.875rem;
+    height: 1.875rem;
+}
+
+/*尾部*/
+#footerPop {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    background: #fff;
+}
+#footerPop .footerNav {
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid #f2f2f2;
+    text-align: center;
+}
+#footerPop .footerNav  .flexBox {
+  overflow: hidden;
+    padding: 6px 0 0 0;
+}
+#footerPop .footerNav  .flexBox .f1{
+  float: left;
+    width: 25%;
+}
+#footerPop .footerNav  .flexBox .f1 i{
+  font-size: 24px;
+  color: #dbac72;
+}
+#footerPop .footerNav .name {
+    display: block;
+    position: relative;
+    top: -3px;
+    font-size: 10px;
+    color: #dbac72;
+}
+
+.show {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 10;
+    display: none;
+}

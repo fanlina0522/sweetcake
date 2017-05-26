@@ -1,0 +1,112 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #dbac72;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#container h4 {
+  height: 44px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #dbac72;
+  line-height: 44px;
+}
+
+#container h4 i {
+  position: absolute;
+  left: 10px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container main {
+  flex: 1;
+  overflow-y: auto;
+  border-top: 1px solid #eee;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #343434;
+}
+
+#container main .box {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#container main .box h1 {
+  font-size: 12px;
+  line-height: 40px;
+}
+
+#container main .box .key {
+  padding-top: 50px;
+}
+
+#container main .box .key #cdkey, #container main .box .key #btn {
+  margin-left: 120px;
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+#container main .box .key #btn {
+  background-color: #dbac72;
+  margin-top: 10px;
+}
+
+#container main .box .navlink {
+  margin-top: 50px;
+  width: 100%;
+  height: 128px;
+  font-size: 10px;
+  color: #dbac72;
+  text-align: center;
+}
+
+#container main .box .navlink ul {
+  padding: 20px 0;
+}
+
+#container main .box .navlink ul li {
+  display: inline-block;
+  padding: 0  5px;
+}
+
+#container main .box .navlink ul li a {
+  border-right: 1px solid #dbac72;
+  padding-right: 10px;
+}
+
+#container main .box .navlink ul li:nth-last-child(1) a {
+  border-right: 0;
+}
