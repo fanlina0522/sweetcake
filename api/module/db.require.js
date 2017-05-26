@@ -1,8 +1,4 @@
-var mongodb = require('mongodb');
-
-var server = new mongodb.Server('localhost', 27017);
-
-var db = new mongodb.Db('Sweetcake', server);
+var db = require('./db.common').db;
 
 
 //数据是否存在

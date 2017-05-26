@@ -1,11 +1,12 @@
  $(function(){
- 	$('#searchKey').on('click',function(){
- 		// console.log(111);
+ 	$('#searchKey').on('click',function(e){
+ 		e.preventDefault();
+
  		var data = $('#keyword').val();
- 		if(!data){
- 			return false;
-		}
- 		location.href = 'html/Group-list.html?searchkey="'+data + '"';
+
+ 		location.href = 'html/Group-list.html?data='+data
+			// '"'+ data + '"';
+
  	});
  });
  

@@ -9,7 +9,6 @@ require(['config'],function(){
             //页面传递参数接收
             var goodsId = window.location.search;
             goodsId = goodsId.split('=')[1];
-            console.log(goodsId)
 
             //post请求
             $.get( erp.baseUrl + 'getDetail',{
@@ -51,7 +50,7 @@ require(['config'],function(){
                                 <div class='item pd-spec-sx enable' data-id=${goodsid+cakeId} for="proType${cakeId}" data-price="${price}">
                                     <p class="checkedWarp">
                                         <input type="radio" id="proType${cakeId}" name="proType" >
-                                    ${size}
+                                            <span>${size}</span>
                                         <strong>&yen;${price}</strong>
                                     </p>
                                 </div>
@@ -59,6 +58,8 @@ require(['config'],function(){
                 }).join('');
                 
                 $('.selectTypeList').html(goodsSize);
+
+                $("input[type='radio']").eq(0).prop("checked", true);
 
 
 
@@ -164,7 +165,6 @@ require(['config'],function(){
                         break;
                     }
                 }
-
                 //如果不存在
                 var data ;
                 if(!hasGoods){
@@ -172,7 +172,7 @@ require(['config'],function(){
                     data = {
                         id : $current.attr('data-id'),
                         name : $('.name>h1').text(),
-                        size : size,
+                        size : $('.item span').text(),
                         price : currentPrice,
                         acount : $acounts,
                         img : imgUrl[0]
@@ -188,7 +188,7 @@ require(['config'],function(){
                 cartList.map(function(item){
                     total += Number(item.acount);
                 })
-                 $('#toCart>i').text(total);
+                $('#toCart>i').text(total);
                 
             })
 

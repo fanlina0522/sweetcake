@@ -1,8 +1,4 @@
-var mongodb = require('mongodb');
-
-var server = new mongodb.Server('localhost', 27017);
-
-var db = new mongodb.Db('Sweetcake', server);
+var db = require('./db.common').db;
 
 var exists = function(_name, response){
 	db.open(function(error, db){

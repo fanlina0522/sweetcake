@@ -1,10 +1,4 @@
-//npm install mongodb
-var mongodb = require('mongodb');
-
-//连接mongodb服务器
-var server = new mongodb.Server('localhost',27017);
-
-var db = new mongodb.Db('order',server);
+var db = require('./db.common').db;
 
 //连接db
 var exists = function(_collection,callback){

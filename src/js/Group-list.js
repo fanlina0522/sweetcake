@@ -7,11 +7,10 @@ $(function() {
     var jt_arr = jt_data.split('=');
     console.log(jt_arr)
     //获取到搜索的关键字
-    var keyword = jt_arr[1];
-    var keyword_name = jt_arr[0];
+    var keyword = decodeURI(jt_arr[1]);
+    var keyword_name = decodeURI(jt_arr[0]);
 
-
-
+    console.log(keyword);
     if (keyword_name == 'name') {
 
         goodsajax(keyword, 'null')
@@ -74,7 +73,7 @@ $(function() {
             var li = $('<li/>');
             //生成内容
             li.html(` 
-                <a href="Group-list.htm?id=${id}" class="product_a">
+                <a href="../html/goodsdetail.html?id=${id}" class="product_a">
                     <p><img data-original="../img/${images}" alt="" src="../img/${images}"></p>
                     <div class="conWarp">
                     <h4>${name} ${brand}</h4>

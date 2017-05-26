@@ -10,6 +10,7 @@ $(function(){
 
 
 	// 当购物车列表为空时
+	emptyCar();
 	var $_goods;
 	function emptyCar(){
 		if($('.goodslist').children().length<1){
@@ -70,7 +71,7 @@ $(function(){
 
 				for(var i=0;i<goodSS.length;i++){
 					if(goodSS[i].id === goodsId){
-						goodSS = goodSS.splice(i,1);
+						goodSS.splice(i,1);
 
 					}
 

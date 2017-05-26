@@ -1,4 +1,4 @@
 var erp = erp || {};
 
-erp.baseUrl = 'http://localhost:8888/';
+erp.baseUrl = 'http://10.3.133.28:8888/';
 
