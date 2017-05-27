@@ -172,7 +172,7 @@ require(['config'],function(){
                     data = {
                         id : $current.attr('data-id'),
                         name : $('.name>h1').text(),
-                        size : $('.item span').text(),
+                        size : $('input:checked').siblings('span').text(),
                         price : currentPrice,
                         acount : $acounts,
                         img : imgUrl[0]

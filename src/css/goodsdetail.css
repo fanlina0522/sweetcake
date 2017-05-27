@@ -80,9 +80,9 @@
 
 .selectTypeList .item { background: #eeeeda; padding: 5px; margin: 0 0 8px 0; border-radius: 12px; color: #9b4802; }
 
-input[type=radio]:checked { border: 1px solid #dbac72; color: #fff; background: #dbac72; }
+input[type=radio]:checked { border: 1px solid #dbac72; color: #fff; background: #dbac72 !important; }
 
-input[type=radio] { width: 15px; height: 15px; border: 1px solid #dddddd; padding: 0; margin: 0; border-radius: 50%; text-align: center; line-height: 22px; font-size: 18px; vertical-align: top; }
+input[type=radio] { width: 20px; height: 20px; border: 1px solid #dddddd; padding: 0; margin: 0; border-radius: 50%; text-align: center; line-height: 22px; font-size: 18px; vertical-align: top; }
 
 .checkedWarp input { display: inline-block; position: relative; top: 1px; margin: 0 4px 0 0; }
 
