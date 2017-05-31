@@ -1,0 +1,176 @@
+body, html {
+  height: 100%;
+  background: #fffff0;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #dbac72;
+  font-size: 12px;
+}
+
+ul {
+  list-style: none;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  display: block;
+  content: "";
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#container h4 {
+  height: 44px;
+  font-weight: normal;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #dbac72;
+  line-height: 44px;
+  position: relative;
+}
+
+#container h4 i {
+  position: absolute;
+  left: 10px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#container main {
+  flex: 1;
+  overflow-y: auto;
+}
+
+#container main li {
+  margin-top: 10px;
+}
+
+#container main li .ornum {
+  position: relative;
+  font-size: 14px;
+  line-height: 30px;
+  padding: 0 10px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+#container main li .ornum .orStatus {
+  position: absolute;
+  color: #aa0000;
+  right: 10px;
+}
+
+#container main li .or_msg {
+  background: #fff;
+}
+
+#container main li .or_msg .or_up {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+#container main li .or_msg .or_up .or_up_left {
+  float: left;
+  width: 25%;
+}
+
+#container main li .or_msg .or_up .or_up_left img {
+  width: 100%;
+}
+
+#container main li .or_msg .or_up .or_up_right {
+  float: left;
+  width: 65%;
+  padding-left: 10px;
+}
+
+#container main li .or_msg .or_up .or_up_right .qty_price {
+  position: relative;
+  padding-top: 20%;
+}
+
+#container main li .or_msg .or_up .or_up_right .qty_price .goodsqty {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+#container main li .or_msg .or_down {
+  padding: 0 10px;
+  height: 30px;
+  display: flex;
+  line-height: 30px;
+}
+
+#container main li .or_msg .or_down > p {
+  flex: 1;
+  text-align: right;
+  font-size: 12px;
+  line-height: 30px;
+  position: relative;
+}
+
+#container main li .zengpin, #container main li .peisongxinxi {
+  margin-top: 10px;
+  background: #fff;
+}
+
+#container main li .zengpin p, #container main li .peisongxinxi p {
+  font-size: 14px;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+  height: 30px;
+  line-height: 30px;
+  color: #ccc;
+  position: relative;
+}
+
+#container main li .zengpin p:nth-of-type(1), #container main li .peisongxinxi p:nth-of-type(1) {
+  font-size: 16px;
+  color: #000;
+}
+
+#container main li .zengpin p span, #container main li .peisongxinxi p span {
+  color: #000;
+  position: absolute;
+  left: 85px;
+  top: 1px;
+}
+
+#container footer {
+  height: 51px;
+  background: #fff;
+}
+
+#container footer ul {
+  height: 51px;
+  display: flex;
+  text-align: center;
+  margin: 5px 0;
+}
+
+#container footer ul li {
+  flex: 1;
+}

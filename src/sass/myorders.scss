@@ -7,6 +7,15 @@ body,html{
 *{margin:0;padding:0;border:0;outline:0}
 a{text-decoration:none;color:$maincolor;font-size:12px;}
 ul{list-style:none;}
+.clearfix {  zoom: 1;
+}
+.clearfix:after {
+    display: block;
+    content: "";
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
 #container{
     display: flex;
     flex-direction: column;
@@ -39,10 +48,86 @@ ul{list-style:none;}
                 font-size:12px;
                 line-height: 38px;
             }
+            li.active{
+                border-bottom: 2px solid #aa0000;
+                color:#aa0000;
+            }
         }
     }
     main{
         flex:1;
+        overflow-y:auto;
+        .orMsgList,.orthers{
+            li{
+                margin-top:10px;
+                background-color: #fff;
+                >p{
+                    position: relative;
+                    font-size:14px;
+                    line-height: 30px;
+                    padding:0 10px;
+                    border-bottom: 1px solid #eee;
+                    .orStatus{
+                        position: absolute;
+                        color:#aa0000;
+                        right:10px;
+                    }
+                }
+                .or_msg{
+                    .or_up{
+                        border-bottom: 1px solid #eee;
+                        padding:10px;
+                        .or_up_left{
+                            float:left;
+                            width:30%;
+                            img{width:100%;}
+                        }
+                        .or_up_right{
+                            float:left;
+                            width:65%;
+                            padding-left:10px;
+                            position: relative;
+                            .goodsnorms{
+                                padding-top: 20px;
+                                line-height: 35px;
+                                color:#00aa00;
+                            }
+                            .goodsqty{
+                                position: absolute;
+                                bottom: 0;
+                                right:0;
+                            }
+                        }
+                    }
+                    .or_down{
+                        padding: 0 10px;
+                        >p{
+                            text-align: right;
+                            font-size: 12px;
+                            line-height: 30px;
+                        }
+                        .btn{
+                            text-align: right;
+                            padding-bottom: 10px;
+                            input{
+                                box-sizing: border-box;
+                                width:80px;
+                                height:30px;
+                                font-size: 12px;
+                                background: #fff;
+                                border-radius:10px;
+                                border:1px solid #eee;
+                            }
+                            #ordetails{
+                                border:0;
+                                background: $maincolor;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     footer{
         height:51px;

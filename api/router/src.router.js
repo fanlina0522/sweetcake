@@ -2,6 +2,7 @@ var db = require('../module/db.search.js');
 var db1 = require('../module/db.address.js');
 var db2 = require('../module/db.czaddress.js');
 var db3 = require('../module/db.order.js');
+var db4 = require('../module/db.orderdetails');
 
 var apiResult = require('../module/apiResult.module.js')
 
@@ -41,11 +42,16 @@ exports.Register = function(app){
 
     //请求订单
     app.post('/order',urlencodedParser,function(request,response){
-        db3.exists('orders',function(result){
+        db3.exists('order',function(result){
             response.send(result);
         })
     })
 
+    //获取订单详情
+    app.post('/orderdetails',urlencodedParser,function(request,response){
+        // console.log(123,request.body.id);
+        db4.exists(request.body.id,response);
+    })
 }
 
 

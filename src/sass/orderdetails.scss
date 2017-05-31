@@ -1,0 +1,135 @@
+$maincolor:#dbac72;
+body,html{
+    height:100%;
+    background:#fffff0;
+    overflow: hidden;
+}
+*{margin:0;padding:0;border:0;outline:0}
+a{text-decoration:none;color:$maincolor;font-size:12px;}
+ul{list-style:none;}
+.clearfix {zoom: 1;}
+.clearfix:after {
+    display: block;
+    content: "";
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    h4{
+        height:44px;
+        font-weight: normal;
+        text-align: center;
+        font-size: 15px;
+        color: #fff;
+        background: #dbac72;
+        line-height: 44px;
+        position: relative;
+        i{
+            position: absolute;
+            left: 10px;
+            line-height: 44px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+    main{
+        flex:1;
+        overflow-y: auto;
+        li{
+            margin-top:10px;
+            .ornum{
+                position: relative;
+                font-size:14px;
+                line-height: 30px;
+                padding:0 10px;
+                border-bottom: 1px solid #eee;
+                background: #fff;
+                .orStatus{
+                    position: absolute;
+                    color:#aa0000;
+                    right:10px;
+                }
+            }
+            .or_msg{
+                background: #fff;
+                .or_up{
+                    border-bottom: 1px solid #eee;
+                    padding:10px;
+                    .or_up_left{
+                        float:left;
+                        width:25%;
+                        img{width:100%;}
+                    }
+                    .or_up_right{
+                        float:left;
+                        width:65%;
+                        padding-left:10px;
+                        .qty_price{
+                            position: relative;
+                            padding-top:20%;
+                            .goodsqty{
+                                position: absolute;
+                                bottom: 0px;
+                                right:0;
+                            }
+                        }
+                    }
+                }
+                .or_down{
+                    padding: 0 10px;
+                    height:30px;
+                    display:flex;
+                    line-height: 30px;
+                    >p{
+                        flex:1;
+                        text-align: right;
+                        font-size: 12px;
+                        line-height: 30px;
+                        position: relative;
+                    }
+                }
+            }
+            .zengpin,.peisongxinxi{
+                margin-top:10px;
+                background: #fff;
+                p{
+                    font-size: 14px;
+                    padding-left:10px;
+                    border-bottom:1px solid #eee;
+                    height:30px;
+                    line-height: 30px;
+                    color:#ccc;
+                    position: relative;
+
+                    &:nth-of-type(1){
+                        font-size: 16px;
+                        color:#000;
+                    }
+                    span{
+                        color:#000;
+                        position: absolute;
+                        left:85px;
+                        top:1px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        height:51px;
+        background:#fff;
+        ul{
+            height:51px;
+            display: flex;
+            text-align: center;
+            margin:5px 0;
+            li{
+                flex:1;
+            }
+        }
+    }
+}

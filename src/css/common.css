@@ -1,70 +1,68 @@
-@charset "utf-8";
-/* CSS Document */
-/* ================================= From network ==================================== */
-*{
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
+@charset "UTF-8";
+/*重置样式表*/
+/*==========样式重置===========*/
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, l, ol, dl, dt, dd {
+  padding: 0;
+  margin: 0;
 }
-html {
-	-ms-text-size-adjust: 100%; /* 2 */
-	-webkit-text-size-adjust: 100%; /* 2 */
-	font-family: Microsoft YaHei;
-	height: 100%;
-	-webkit-text-size-adjust:none;
+
+ul, ol {
+  list-style: none;
 }
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+header, footer, section, nav, main {
+  display: block;
+}
+
 body {
-	margin: 0;
-	font-size: 12px;
-	font-family: Microsoft YaHei;
-	height: 100%;
-	-webkit-text-size-adjust:none;
-	background: #fffff0;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  color: #dbac72;
 }
 
 a {
-    background: transparent;
-    text-decoration: none;
-    color: #15110e;
+  text-decoration: none;
+  font-size: 12px;
+  color: #dbac72;
 }
 
-ul,li{
-	list-style: none;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.hor .f1, .hor .f2, .hor .f3, .hor .f4, .hor .f5, .hor .f6, .hor .f7 {
-    width: 1%;
-    position: relative;
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
 }
 
-/* =========== float =========== */
-.fl { float: left; } .fr { float: right; } .cl { clear: both; }
-.pr { position: relative; } .pa { position: absolute; }
-.z1 { z-index: 1; } .z2 { z-index: 2; } .z3 { z-index: 3; } .z4 { z-index: 4; } .z5 { z-index: 5; } .z{ *zoom: 1; }
-
-.bc-wh { background: #fff; } .bc-bl { background: #000; } .wh { color: #fff; } .bl { color: #000; }
-/* =========== font-style =========== */
-.fs-n { font-weight: normal; font-style: normal; }
-.fs-b { font-weight: bold;}
-.fs-i { font-style: italic;}
-.fs-u { text-decoration: underline;}
-.font14 { font-size: 14px; }
-.font16 { font-size: 16px; }
-.font18 { font-size: 18px; }
-.font20 { font-size: 20px; }
-.font0 { font-size: 0; }
-/* =========== font-algin =========== */
-.ta-l { text-align: left; }
-.ta-r { text-align: right; }
-.ta-c { text-align: center; }
-
-/*滚动*/
-.scrollY {
-    overflow-y: auto;
+html, body {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #fffff0;
 }
 
-/* 清除 */
-.cl, .clearfix { zoom: 1; overflow: hidden; }
-
-.cl:after, .clearfix:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }
+.container {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
