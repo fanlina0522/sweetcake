@@ -9,35 +9,7 @@
 	<!--<script  src ="../../js/require.js" data-main ="../../js/add-address.js"></script>-->
 	<script src="../../js/goback.js"></script>
 	<script src="../../lib/common/global.js"></script>
-	<script>
-		$(function(){
-		    $.post(erp.baseUrl + 'address',function(response){
-		        console.log(response);
-				$('.myAddress').html(response.map(function(item,index){
-					return `<li>
-						<p class="selfMsg"><span class="name">${item.username}</span>
-							<span class="phone">${item.phone}</span>
-						</p>
-						<p><span class="city">${item.address.replace(',','')}</span><span class="xxadd">${item.addrs}</span></p>
-						<p><span class="mr">设为默认</span><span class="reset">编辑</span></p>
-					</li>`;
-				}).join(''));
-
-				//编辑信息，事件委托
-				$('.myAddress').on('click','.reset',function(){
-
-				})
-				//设置默认
-				$('.myAddress').on('click','.mr',function(){
-					var p = $('.mr').parents('li').children('.selfMsg');
-					var p1 = $(this).parents('li').children('.selfMsg');
-					var sp =  $('<span/>').addClass('mr_btn').text('默认');
-					p.children('.mr_btn').remove();
-					p1.append(sp);
-				})
-			})
-		})
-	</script>
+	<script src="../../js/address.js"></script>
 </head>
 <body>
 	<div id="box">

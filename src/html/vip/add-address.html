@@ -33,11 +33,14 @@
 					return false;
 				}
 
+				var now = new Date();
+				var res = `${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}`;
 				$.post(erp.baseUrl + 'add-address',{
 					username:$("input[name='uname']").val(),
 					phone:$("input[name='phone']").val(),
 					address:$("input[name='addrdisplay']").val(),
-					addrs:$("textarea[name='addrs']").val()
+					addrs:$("textarea[name='addrs']").val(),
+					id:res
 					}, function(response){
 				    	console.log(response);
 			           	if(response.status){

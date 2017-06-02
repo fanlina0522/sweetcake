@@ -19,4 +19,22 @@ var exists = function(_collection,callback){
     })
 }
 
+//设置默认地址
+// var update = function(id,response){
+//     db.open(function(error, db){
+//         if(error){
+//             console.log('connect db:', error);
+//         }
+//         db.collection('address', function(error, collection){
+//             if(error){
+//                 console.log(error);
+//             } else {
+//                 collection.update({id:id},{$set:{status:true}});
+//             }
+//             db.close();
+//         })
+//     })
+// }
+
 exports.exists = exists;
+// exports.update = update;

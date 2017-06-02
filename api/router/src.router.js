@@ -40,6 +40,12 @@ exports.Register = function(app){
         })
     })
 
+    // //设置地址为默认值
+    // app.post('/address_mr',urlencodedParser,function(request,response){
+    //     console.log(request.body.id);
+    //     db2.update(request.body.id,response);
+    // })
+
     //请求订单
     app.post('/order',urlencodedParser,function(request,response){
         db3.exists('order',function(result){
