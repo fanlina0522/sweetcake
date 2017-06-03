@@ -16,12 +16,15 @@ $(function() {
         goodsajax(keyword, 'null')
 
 
-    } else if (keyword_name = "data") {
+    } else if (keyword_name == "data") {
 
         $('.title').html(keyword);
         goodsajax('null', keyword)
-    }
+    }else{
 
+        $('.title').html('商品列表');
+        goodsajax("全部蛋糕 All Cake", 'null')
+    }
     // 获取点击的内容
 
     var moreArrow = $('.moreArrow')

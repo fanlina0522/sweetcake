@@ -90,6 +90,7 @@ input {
     text-align: center;
     font-size:0.9375rem;
     color: #fff;
+       margin-right: 30px;
   }
 /*商品列表*/
 #mainWarp{

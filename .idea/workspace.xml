@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="746f4f72-74ce-4cf1-b81d-733f40eb7af1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erp/css/order.css" afterPath="$PROJECT_DIR$/erp/css/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erp/js/order.js" afterPath="$PROJECT_DIR$/erp/js/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/myorders.css" afterPath="$PROJECT_DIR$/src/css/myorders.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/orderdetails.css" afterPath="$PROJECT_DIR$/src/css/orderdetails.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/myorders.scss" afterPath="$PROJECT_DIR$/src/sass/myorders.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/orderdetails.scss" afterPath="$PROJECT_DIR$/src/sass/orderdetails.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/Group-list.css" afterPath="$PROJECT_DIR$/src/css/Group-list.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/Group-list.js" afterPath="$PROJECT_DIR$/src/js/Group-list.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,27 +15,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/index.js">
+      <file leaf-file-name="Group-list.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/Group-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="154">
+              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
               <folding>
-                <marker date="1496475458967" expanded="true" signature="914:1098" ph="..." />
+                <marker date="1496483283840" expanded="true" signature="2106:2347" ph="..." />
+                <marker date="1496483283840" expanded="true" signature="2244:2326" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group-list.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/Group-list.js">
+      <file leaf-file-name="Group-list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/html/Group-list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding>
-                <marker date="1496374884862" expanded="true" signature="2017:2258" ph="..." />
-                <marker date="1496374884862" expanded="true" signature="2155:2237" ph="..." />
-              </folding>
+            <state relative-caret-position="269">
+              <caret line="48" column="58" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myorders.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myorders.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sass/myorders.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="1298">
               <caret line="89" column="41" lean-forward="false" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
               <folding />
             </state>
@@ -90,8 +83,8 @@
       <file leaf-file-name="Group-list.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/Group-list.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="124" column="23" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="23" />
+            <state relative-caret-position="511">
+              <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -149,7 +142,6 @@
         <option value="$PROJECT_DIR$/api/module/db.czaddress.js" />
         <option value="$PROJECT_DIR$/src/html/vip/address.html" />
         <option value="$PROJECT_DIR$/src/sass/index.scss" />
-        <option value="$PROJECT_DIR$/src/js/Group-list.js" />
         <option value="$PROJECT_DIR$/src/html/vip/orderdetails.html" />
         <option value="$PROJECT_DIR$/src/js/config.js" />
         <option value="$PROJECT_DIR$/api/router/Detailroute.js" />
@@ -185,12 +177,13 @@
         <option value="$PROJECT_DIR$/src/html/Group-list.html" />
         <option value="$PROJECT_DIR$/api/module/commodity.db.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/css/Group-list.css" />
         <option value="$PROJECT_DIR$/api/router/order.js" />
         <option value="$PROJECT_DIR$/erp/css/order.css" />
         <option value="$PROJECT_DIR$/erp/js/order.js" />
         <option value="$PROJECT_DIR$/src/sass/orderdetails.scss" />
         <option value="$PROJECT_DIR$/src/sass/myorders.scss" />
+        <option value="$PROJECT_DIR$/src/css/Group-list.css" />
+        <option value="$PROJECT_DIR$/src/js/Group-list.js" />
       </list>
     </option>
   </component>
@@ -294,6 +287,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -317,6 +328,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vip" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -525,12 +554,12 @@
       <workItem from="1496369724925" duration="3687000" />
       <workItem from="1496374445906" duration="11175000" />
       <workItem from="1496393482660" duration="15212000" />
-      <workItem from="1496451041634" duration="25250000" />
+      <workItem from="1496451041634" duration="26366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149002000" />
+    <option name="totallyTimeSpent" value="150118000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
@@ -962,14 +991,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/html/Group-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="44" column="12" lean-forward="true" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/router/produt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -991,18 +1012,7 @@
         <state relative-caret-position="550">
           <caret line="52" column="32" lean-forward="true" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="32" />
           <folding>
-            <element signature="e#1669#1674#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/Group-list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <marker date="1496374884862" expanded="true" signature="2017:2258" ph="..." />
-            <marker date="1496374884862" expanded="true" signature="2155:2237" ph="..." />
+            <element signature="e#1669#1674#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1019,14 +1029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="155" column="21" lean-forward="false" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/Group-list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="124" column="23" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1078,9 +1080,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sass/myorders.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="1298">
           <caret line="89" column="41" lean-forward="false" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/Group-list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="91" column="16" lean-forward="true" selection-start-line="91" selection-start-column="16" selection-end-line="91" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/Group-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="48" column="58" lean-forward="false" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Group-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <marker date="1496483283840" expanded="true" signature="2106:2347" ph="..." />
+            <marker date="1496483283840" expanded="true" signature="2244:2326" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
