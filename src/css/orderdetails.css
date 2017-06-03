@@ -34,6 +34,7 @@ ul {
 }
 
 #container {
+  color: #dbac72;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -140,22 +141,23 @@ ul {
 }
 
 #container main .ordes .zengpin p, #container main .ordes .peisongxinxi p {
+  color: #dbac72;
   font-size: 12px;
   padding-left: 10px;
   border-bottom: 1px solid #eee;
   height: 30px;
   line-height: 30px;
-  color: #ccc;
   position: relative;
+  color: #ccc;
 }
 
 #container main .ordes .zengpin p:nth-of-type(1), #container main .ordes .peisongxinxi p:nth-of-type(1) {
   font-size: 14px;
-  color: #000;
+  color: #dbac72;
 }
 
 #container main .ordes .zengpin p span, #container main .ordes .peisongxinxi p span {
-  color: #000;
+  color: #dbac72;
   position: absolute;
   left: 85px;
   top: 1px;

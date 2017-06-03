@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="746f4f72-74ce-4cf1-b81d-733f40eb7af1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/module/commodity.db.js" afterPath="$PROJECT_DIR$/api/module/commodity.db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/router/order.js" afterPath="$PROJECT_DIR$/api/router/order.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erp/css/order.css" afterPath="$PROJECT_DIR$/erp/css/order.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/erp/js/order.js" afterPath="$PROJECT_DIR$/erp/js/order.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/Group-list.css" afterPath="$PROJECT_DIR$/src/css/Group-list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/Group-list.html" afterPath="$PROJECT_DIR$/src/html/Group-list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/index.js" afterPath="$PROJECT_DIR$/src/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/myorders.css" afterPath="$PROJECT_DIR$/src/css/myorders.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/orderdetails.css" afterPath="$PROJECT_DIR$/src/css/orderdetails.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/myorders.scss" afterPath="$PROJECT_DIR$/src/sass/myorders.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/orderdetails.scss" afterPath="$PROJECT_DIR$/src/sass/orderdetails.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/js/Group-list.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <marker date="1496374884862" expanded="true" signature="2017:2258" ph="..." />
                 <marker date="1496374884862" expanded="true" signature="2155:2237" ph="..." />
@@ -56,16 +55,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="order.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/erp/js/order.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state relative-caret-position="1560">
+              <caret line="112" column="13" lean-forward="false" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
               <folding>
-                <element signature="e#823#1824#0" expanded="false" />
-                <element signature="e#1871#3565#0" expanded="false" />
-                <marker date="1496477402884" expanded="true" signature="1331:1755" ph="..." />
+                <marker date="1496478112746" expanded="true" signature="1331:1752" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myorders.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sass/myorders.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="89" column="41" lean-forward="false" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="orderdetails.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sass/orderdetails.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group-list.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/Group-list.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="124" column="23" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erp/css/order.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="155" column="21" lean-forward="false" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +111,17 @@
         <entry file="file://$PROJECT_DIR$/erp/html/order.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -93,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/html/vip/myorders.html" />
         <option value="$PROJECT_DIR$/src/sass/cdkey.scss" />
         <option value="$PROJECT_DIR$/api/module/db.orderdetails.js" />
@@ -108,8 +154,6 @@
         <option value="$PROJECT_DIR$/src/js/config.js" />
         <option value="$PROJECT_DIR$/api/router/Detailroute.js" />
         <option value="$PROJECT_DIR$/src/lib/common/global.js" />
-        <option value="$PROJECT_DIR$/src/sass/orderdetails.scss" />
-        <option value="$PROJECT_DIR$/src/sass/myorders.scss" />
         <option value="$PROJECT_DIR$/src/sass/huiyuan.scss" />
         <option value="$PROJECT_DIR$/api/router/src.router.js" />
         <option value="$PROJECT_DIR$/api/module/db.login.js" />
@@ -143,7 +187,10 @@
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/css/Group-list.css" />
         <option value="$PROJECT_DIR$/api/router/order.js" />
+        <option value="$PROJECT_DIR$/erp/css/order.css" />
         <option value="$PROJECT_DIR$/erp/js/order.js" />
+        <option value="$PROJECT_DIR$/src/sass/orderdetails.scss" />
+        <option value="$PROJECT_DIR$/src/sass/myorders.scss" />
       </list>
     </option>
   </component>
@@ -229,7 +276,47 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vip" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,24 +331,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="erp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -293,7 +362,11 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
+              <option name="myItemId" value="erp" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,10 +381,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="router" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -456,12 +525,12 @@
       <workItem from="1496369724925" duration="3687000" />
       <workItem from="1496374445906" duration="11175000" />
       <workItem from="1496393482660" duration="15212000" />
-      <workItem from="1496451041634" duration="21673000" />
+      <workItem from="1496451041634" duration="25250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145425000" />
+    <option name="totallyTimeSpent" value="149002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="1" />
@@ -538,32 +607,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sass/orderdetails.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-          <folding>
-            <element signature="e#3492#3731#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sass/car.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5016">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/module/db.orderdetails.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lib/common/global.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -629,14 +672,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -801,17 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erp/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
-          <folding>
-            <element signature="e#3972#7529#0" expanded="false" />
-            <marker date="1496473107737" expanded="true" signature="3007:3279" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doc/order.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -946,14 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/Group-list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1985">
-          <caret line="124" column="23" lean-forward="false" selection-start-line="124" selection-start-column="23" selection-end-line="124" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/router/produt.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -983,19 +999,11 @@
     <entry file="file://$PROJECT_DIR$/src/js/Group-list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <marker date="1496374884862" expanded="true" signature="2017:2258" ph="..." />
             <marker date="1496374884862" expanded="true" signature="2155:2237" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erp/html/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,15 +1015,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/erp/css/order.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="155" column="21" lean-forward="false" selection-start-line="155" selection-start-column="21" selection-end-line="155" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/Group-list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="124" column="23" lean-forward="false" selection-start-line="122" selection-start-column="4" selection-end-line="124" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="111" column="44" lean-forward="true" selection-start-line="111" selection-start-column="44" selection-end-line="111" selection-end-column="44" />
+          <folding>
+            <element signature="e#3972#7529#0" expanded="false" />
+            <marker date="1496473107737" expanded="true" signature="3007:3279" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erp/html/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/erp/js/order.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" column="24" lean-forward="true" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        <state relative-caret-position="1560">
+          <caret line="112" column="13" lean-forward="false" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
           <folding>
-            <element signature="e#823#1824#0" expanded="false" />
-            <element signature="e#1871#3565#0" expanded="false" />
-            <marker date="1496477402884" expanded="true" signature="1331:1755" ph="..." />
+            <marker date="1496478112746" expanded="true" signature="1331:1752" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/orderdetails.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="111" column="30" lean-forward="false" selection-start-line="111" selection-start-column="30" selection-end-line="111" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sass/myorders.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="89" column="41" lean-forward="false" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

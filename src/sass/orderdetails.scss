@@ -16,6 +16,7 @@ ul{list-style:none;}
     height: 0;
 }
 #container{
+    color: $maincolor;
     display: flex;
     flex-direction: column;
     height:100%;
@@ -97,23 +98,24 @@ ul{list-style:none;}
                 }
             }
             .zengpin,.peisongxinxi{
+
                 margin-top:10px;
                 background: #fff;
                 p{
+                    color:$maincolor;
                     font-size: 12px;
                     padding-left:10px;
                     border-bottom:1px solid #eee;
                     height:30px;
                     line-height: 30px;
-                    color:#ccc;
                     position: relative;
-
+                    color:#ccc;
                     &:nth-of-type(1){
                         font-size: 14px;
-                        color:#000;
+                        color:$maincolor;
                     }
                     span{
-                        color:#000;
+                        color:$maincolor;
                         position: absolute;
                         left:85px;
                         top:1px;

@@ -91,6 +91,7 @@ ul {
   font-size: 14px;
   line-height: 30px;
   padding: 0 10px;
+  color: #dbac72;
   border-bottom: 1px solid #eee;
 }
 
@@ -119,6 +120,7 @@ ul {
   width: 65%;
   padding-left: 10px;
   font-size: 14px;
+  color: #dbac72;
 }
 
 #container main .orMsgList li .or_up .or_up_right .goodsnorms, #container main .orthers li .or_up .or_up_right .goodsnorms {
@@ -158,6 +160,7 @@ ul {
 }
 
 #container main .orMsgList li .or_down .btn input, #container main .orthers li .or_down .btn input {
+  color: #dbac72;
   box-sizing: border-box;
   width: 80px;
   height: 30px;

@@ -41,21 +41,21 @@ $(function(){
       var orState = '';
       var goodsNameStr = '';
       var orderGoodsNum = 0;
-      if (item.paid=='y') {
-        orState = '已付款';
+      if (item.paid=='待付款') {
+        orState = '待付款';
       }else if (item.shipped=='y') {
         orState = '已发货';
       }else if (item.completed=='y') {
         orState = '已完成';
       }
       goodsNameStr += item.goods.map(function(arritem){
-        orderGoodsNum +=Number(arritem.num) ;
-        return arritem.goodsname;
+        orderGoodsNum +=Number(arritem.acount) ;
+        return arritem.name;
       }).join(',');
       return `<tr><td>${item.orderID}</td>
               <td>${item.username}</td>
               <td>${goodsNameStr}</td>
-              <td>${item.addr[0].address}</td>
+              <td>${item.addr[0].addr}</td>
               <td>${item.orderTime}</td>
               <td>${item.less}</td>
               <td>${orderGoodsNum}</td>
@@ -87,8 +87,8 @@ $(function(){
 
 			var html = '' , num = 0;
 			res.goods.map(function(item){
-				num += Number(item.num);
-				html +=`${item.goodsname} , 规格 : ${item.size} , 数量 : ${item.num}<br>`;
+				num += Number(item.acount);
+				html +=`${item.name} , 规格 : ${item.size} , 数量 : ${item.acount}<br>`;
 			});
 
 			$('.name').html(html);
@@ -104,8 +104,8 @@ $(function(){
 			$('.finalprice').text('￥'+res.finalprice);
 			$('.chocolateBrand').text(res.chocolateBrand);
 			$('.greetingCard').text(res.greetingCard);
-			if (res.paid=='y') {
-			    var orState = '已付款';
+			if (res.paid=='待付款') {
+			    var orState = '待付款';
 			}else if (res.shipped=='y') {
 				orState = '已发货';
 			}else if (res.completed=='y') {

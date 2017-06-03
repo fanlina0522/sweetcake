@@ -151,6 +151,9 @@
 .order_box .order_outbox table tbody tr td {
   height: 55px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap
 }
 
 .order_box .order_outbox table tbody tr :nth-child(3) {
