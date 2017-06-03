@@ -1,4 +1,5 @@
 @import 'style.css';
+@import 'order.css';
 $e:#dbac72;
 $b:#f2f2f2;
 $t:#9b4802;
@@ -15,12 +16,12 @@ $a:#19a97b;
 .box{
 	height:100%;
 	overflow:hidden;
-
 	.contop{
 		position:relative;
+		padding-top:24px;
 		width:100%;
 		border-bottom:1px solid $b;
-		height:65px;
+		height:41px;
 		button{
 			height:30px;
 			padding:0 10px;
@@ -68,6 +69,7 @@ $a:#19a97b;
 			background-color:rgba(255,255,255,1);
 			border:2px solid $a;
 			position:absolute;
+			z-index:10;
 			border-radius:8px;
 			h2{
 				strong{
@@ -85,6 +87,14 @@ $a:#19a97b;
 			}
 			ul{
 				li{
+					.checkbox{
+						margin-left:120px;
+						width:520px;
+						label{
+							margin-right:10px;
+							line-height:22px;
+						}
+					}
 					.select{	
 						// width:60px;
 						padding:0 20px;
@@ -112,6 +122,8 @@ $a:#19a97b;
 		height:520px;
 		position:relative;
 		.modifyprodut{
+			z-index:24;
+			display:none;
 			position:absolute;
 			left:50px;
 			width:710px;
@@ -131,6 +143,36 @@ $a:#19a97b;
 					background:#57b194;
 					:hover{
 						background:$a;
+					}
+				}
+			}
+			ul{
+				li{
+					.checkbox{
+						margin-left:120px;
+						width:520px;
+						label{
+							margin-right:10px;
+							line-height:22px;
+						}
+					}
+					.select{	
+						// width:60px;
+						padding:0 20px;
+						option{
+							height:16px;
+							line-height:16px;
+						}
+					}
+					.item_name{
+						float:left;
+					}
+					.input_img{
+						float:left;
+						width:320px;
+					}
+					.modify_link_btn{
+						margin-left:122px;
 					}
 				}
 			}
@@ -196,6 +238,10 @@ $a:#19a97b;
 					td:nth-child(5){
 						line-height:27px;
 					}
+					// span{
+					// 	color:$a;
+					// 	cursor:potiner;
+					// }
 					a:hover{
 						color:$e;
 					}
@@ -203,156 +249,4 @@ $a:#19a97b;
 			}	
 		}		
 	}
-}
-.order_box{
-	height:100%;
-	overflow:hidden;
-	.contop{
-		position:relative;
-		width:100%;
-		border-bottom:1px solid $b;
-		height:65px;
-		button{
-			height:30px;
-			padding:0 10px;
-			border-radius:4px;
-			border:0;
-			color:#fff;
-			outline:none;
-			background:$a;
-		}
-		.contop_r{
-			float:right;
-			margin-right:26px;
-			button{
-				background-color:$e;
-			}
-		}
-		.searchbox{
-			float:left;
-			height:30px;
-			text-align:center;
-			margin-left:12px;
-			.tip,span,button{
-				margin:0 10px;
-				line-height:28px;
-				height:28px;
-				float:left;
-			}
-			span{
-				display:block;
-				height:30px;
-				border:1px solid $b;
-				border-radius:4px;
-				input{
-					border:0;
-					outline:none;
-				}
-			}
-		}
-		// .addprodut{
-		// 	display:none;
-		// 	left:50px;
-		// 	width:710px;
-		// 	height:514px;
-		// 	overflow-y:auto;
-		// 	background-color:rgba(255,255,255,1);
-		// 	border:2px solid $a;
-		// 	position:absolute;
-		// 	border-radius:8px;
-		// 	h2{
-		// 		strong{
-		// 			margin-left:10px;
-		// 		}
-		// 		button{
-		// 			float:right;
-		// 			margin-right:16px;
-		// 			font-size:22px;
-		// 			background:#57b194;
-		// 		}
-		// 		button:hover{
-		// 			background:$a;
-		// 		}
-		// 	}
-		// 	ul{
-		// 		li{
-		// 			.select{	
-		// 				// width:60px;
-		// 				padding:0 20px;
-		// 				option{
-		// 					height:16px;
-		// 					line-height:16px;
-		// 				}
-		// 			}
-		// 			.item_name{
-		// 				float:left;
-		// 			}
-		// 			.input_img{
-		// 				float:left;
-		// 				width:320px;
-		// 			}
-		// 			.link_btn{
-		// 				margin-left:122px;
-		// 			}
-		// 		}
-		// 	}			
-		// }
-	}
-	.order_outbox{
-		padding:10px 15px;
-		height:520px;
-			table{	
-			width:100%;
-			height:490px;
-			margin-top:10px;
-			border-collapse: collapse;
-			thead{
-				// display:block;
-				tr{width:1040px;
-					height:40px;
-					background-color:#eee;
-					line-height:40px;
-					text-align: center;
-					:nth-child(3){
-						width:125px;
-					}
-					th{
-						width:130px;
-					    word-wrap: break-word;
-						// overflow: hidden;
-					}
-				}
-			}
-			tbody{
-				// display:block;
-				width:100%;
-				overflow-y:auto;
-				overflow-x:hidden;
-				text-align:center;
-				height:450px;
-				::-webkit-scrollbar{
-				    width: 16px;
-				    height: 16px;
-				    background-color: #f5f5f5;
-				}
-				tr{
-					height:55px;
-					line-height:55px;
-					td{
-						height:55px;
-						overflow:hidden;
-					}
-					:nth-child(3){
-						width:125px;
-						color:$e;
-					}
-					border-bottom:1px solid #ccc;
-					a:hover{
-						color:$e;
-					}
-				}
-			}	
-		}
-	}
-	
 }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账号注册</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/register.css">
+	<link rel="stylesheet" href="../css/normal.css">
+	<link rel="stylesheet" href="../lib/jquery-confirm/jquery-confirm.css">
+	<script src="../lib/common/global.js"></script>
+	<script src="../js/require.js" data-main="../js/register.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="top">
+				<div class="top_l">
+					<a  class="iconfont icon-fanhui" href = "../index.html">
+						<!-- &lt; -->
+					</a>
+				</div>
+				<h4>
+					用户注册
+				</h4>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="add-address-form">
+	            <div class="search_bg">
+	                <div class="add_box">
+	                    <div class="add_title"><span>用户名</span></div>
+	                    <div class="add_text">
+	                    <input name="uname" id="userName" type="text" placeholder="请输入用户名(6~12位数字字母或下划线)" class="add_input" ></div>
+	                </div>
+	                <div class="add_box tips" id="unameCheck" style="height: 50px;text-align: center;display:none;" ></div>
+	                <div class="add_box">
+	                    <div class="add_title"><span>手机号码</span></div>
+	                    <div class="add_text">
+	                    <input name="phone" id="phoneNumber"  type="number" placeholder="请输入手机号码" class="add_input"></div>
+	                </div>
+	                <div class="add_box tips" id="phoneCheck" style="height: 50px;text-align: center;display:none;" ></div>
+	                <div class="add_box">
+	                    <div class="add_title"><span>密码</span></div>
+	                    <div class="add_text">
+	                    <input id="password" name="addrdisplay" type="password"  class="add_input" placeholder="请输入密码(6~12数字字母组合)" >
+	                    <input id="addrvalue" name="addrvalue" type="hidden" value=""></div>
+	                </div>
+	                <div class="add_box tips" id="pswCheck" style="height: 50px;text-align: center;display:none;" ></div>
+
+	                <div class="add_box">
+	                    <div class="add_title"><span>重复密码</span></div>
+	                    <div class="add_text">
+	                    <input id="password_repeat" name="addrdisplay" type="password"  class="add_input" placeholder="请再次输入密码" value="">
+	                    <input id="addrvalue" name="addrvalue" type="hidden" ></div>
+	                </div>
+	                <div class="add_box tips" id="pswRepeat" style="height: 50px;text-align: center;display:none;" ></div>
+	                
+	            </div>
+	            <div class="scree_but">
+	                <div class="scr_qd add_bottom">
+	                	<input id="btnSubmit" name="btnSubmit" type="button" class="s_qd" value="确认注册">
+	                </div>
+	            </div>
+	        </div>
+		</div>
+	</main>
+</body>
+</html>

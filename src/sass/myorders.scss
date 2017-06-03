@@ -73,59 +73,65 @@ ul{list-style:none;}
                         right:10px;
                     }
                 }
-                .or_msg{
-                    .or_up{
-                        border-bottom: 1px solid #eee;
-                        padding:10px;
-                        .or_up_left{
-                            float:left;
-                            width:30%;
-                            img{width:100%;}
+                .or_up{
+                    border-bottom: 1px solid #eee;
+                    padding:10px;
+                    .or_up_left{
+                        float:left;
+                        width:25%;
+                        img{width:100%;}
+                    }
+                    .or_up_right{
+                        float:left;
+                        width:65%;
+                        padding-left:10px;
+                        font-size: 14px;
+                        .goodsnorms{
+                            color: $maincolor;
+                            line-height: 30px;
+                            font-size: 12px;
                         }
-                        .or_up_right{
-                            float:left;
-                            width:65%;
-                            padding-left:10px;
+                        .qty_price{
                             position: relative;
-                            .goodsnorms{
-                                padding-top: 20px;
-                                line-height: 35px;
-                                color:#00aa00;
+                            padding-top:10%;
+                            .goodsprice{
+                                color:red;
                             }
                             .goodsqty{
                                 position: absolute;
-                                bottom: 0;
-                                right:0;
-                            }
-                        }
-                    }
-                    .or_down{
-                        padding: 0 10px;
-                        >p{
-                            text-align: right;
-                            font-size: 12px;
-                            line-height: 30px;
-                        }
-                        .btn{
-                            text-align: right;
-                            padding-bottom: 10px;
-                            input{
-                                box-sizing: border-box;
-                                width:80px;
-                                height:30px;
-                                font-size: 12px;
-                                background: #fff;
-                                border-radius:10px;
-                                border:1px solid #eee;
-                            }
-                            #ordetails{
-                                border:0;
-                                background: $maincolor;
-                                color:#fff;
+                                right:-18px;
                             }
                         }
                     }
                 }
+                .or_down{
+                    padding: 0 10px;
+                    >p{
+                        text-align: right;
+                        font-size: 14px;
+                        color:red;
+                        line-height: 30px;
+                    }
+                    .btn{
+                        text-align: right;
+                        padding-bottom: 10px;
+                        input{
+                            box-sizing: border-box;
+                            width:80px;
+                            height:30px;
+                            font-size: 12px;
+                            background: #fff;
+                            border-radius:10px;
+                            border:1px solid #eee;
+                        }
+                        #ordetails{
+                            border:0;
+                            background: $maincolor;
+                            color:#fff;
+                        }
+                    }
+                }
+
             }
         }
     }

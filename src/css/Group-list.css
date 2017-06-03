@@ -238,3 +238,16 @@ input {
     z-index: 10;
     display: none;
 }
+.loading{
+    z-index: 9999;
+    display: inline-block;
+    position: absolute;
+    top: 47%;
+    left: 45%;
+    -webkit-animation:circle 3s infinite linear;
+}
+
+@-webkit-keyframes circle{
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}

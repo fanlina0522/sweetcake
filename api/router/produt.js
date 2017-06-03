@@ -26,14 +26,14 @@ var session = require('express-session');
 exports.Register = function(app){
 
 	//设置 session
-	app.use(cookieParser());
-	app.use(session({
-		secret: '12345',//用来对session数据进行加密的字符串.这个属性值为必须指定的属性
-		name: 'testapp',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
-		cookie: {maxAge: 80000 },  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
-		resave: false,
-		saveUninitialized: true,
-	}));
+	// app.use(cookieParser());
+	// app.use(session({
+	// 	secret: '12345',//用来对session数据进行加密的字符串.这个属性值为必须指定的属性
+	// 	name: 'testapp',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
+	// 	cookie: {maxAge: 80000 },  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
+	// 	resave: false,
+	// 	saveUninitialized: true,
+	// }));
 
 	// 上传图片
 	app.post('/upload', upload.array('photos', 12), function(req, res) {
@@ -73,15 +73,14 @@ exports.Register = function(app){
 		})
 	});
 
-	// 修改商品
-	app.post('/setProdut', urlencodedParser, function(request, response){
+	// type查询商品
+	app.post('/type', urlencodedParser, function(request, response){
 		response.setHeader("Access-Control-Allow-Origin","*");
-		db.exists('cake', request.body, 'id', function(data){
+		db.getType('cake', request.body, 'type', function(data){
 			if(data){
-				// request.session.name = request.body.name;//将已登录用户名存入session
-				response.send(apiResult(true,'修改成功'))
+				response.send(apiResult(true,'查找成功',data))
 			} else {
-				response.send(apiResult(false, '修改失败'));
+				response.send(apiResult(false, '查询错误'));
 			}
 		})
 	});
@@ -95,6 +94,19 @@ exports.Register = function(app){
 				response.send(apiResult(true,'提交成功'))
 			} else {
 				response.send(apiResult(false, '商品id重复，提交失败'));
+			}
+		})
+	});
+
+	// 修改商品
+	app.post('/modifyProdut', urlencodedParser, function(request, response){
+		response.setHeader("Access-Control-Allow-Origin","*");
+		db.modifyProdut('cake', request.body, 'id', function(data){
+			if(data){
+				// request.session.name = request.body.name;//将已登录用户名存入session
+				response.send(apiResult(true,'修改成功'))
+			} else {
+				response.send(apiResult(false, '修改失败'));
 			}
 		})
 	});

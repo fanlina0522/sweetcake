@@ -1,4 +1,4 @@
-var db = require('../module/db.require.js');
+﻿var db = require('../module/db.require.js');
 
 var apiResult = require('../module/apiResult.module.js')
 
@@ -30,6 +30,16 @@ exports.Route = function(app){
 	//详情页id请求数据库
 	app.get('/getDetail',function(request,response){
 		db.queryData('cake',request.query,'id',function(data){
+			response.send(data)
+		})
+	})
+	
+//注册请求数据库
+	app.post('/register',urlencodedParser,function(request,response){
+		console.log(555)
+		
+		db.exists('userData',request.body,'userName',function(data){
+			console.log(data)
 			response.send(data)
 		})
 	})

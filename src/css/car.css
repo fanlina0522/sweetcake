@@ -78,6 +78,18 @@ header .top {
   position: relative;
 }
 
+header .top .backhome{
+  position: absolute;
+  right: 3%;
+  top: 10%;
+}
+header .top .backhome>a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background:url("../css/images/icon/home.png") repeat-x;
+  background-size: 100%
+}
 header .top .top_l {
   width: 46px;
   height: 44px;
@@ -149,7 +161,22 @@ main .wrap .addres .no_addres .add_addres i {
   color: #ddd;
   float: right;
 }
-
+main .wrap .addres .no_addres .add_addres .font14{
+  line-height: 18px;
+   text-align: left;
+}
+main .wrap .addres .no_addres .add_addres .express-name{
+  color: #000;
+}
+main .wrap .addres .no_addres .add_addres .express-phone{
+  color: #000;
+  margin-left: 5px;
+}
+main .wrap .addres .no_addres .add_addres .chadd{
+  line-height: 18px;
+  text-align: left;
+  color: #666;
+}
 main .list header {
   padding: 10px;
   font-size: 14px;
@@ -612,3 +639,30 @@ main .matchingWarp .buy_box #payment-btn {
   font-size: 15px;
   border-radius: 3px;
 }
+footer{
+  height: 50px;
+  background-color:#dbac72;
+  line-height: 50px;
+}
+footer ul{
+  display: flex;
+}
+footer ul li{
+  width: 50%;
+}
+footer ul li:last-child{
+  text-align: right;
+}
+footer ul .totalPrice{
+  font-size: 14px;
+  margin-left:8%;
+}
+footer ul .payBtn{
+  background-color: #3fae38;
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-right: 5%;
+}
+

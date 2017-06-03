@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>后台管理系统</title>
+<meta name="author" content="DeathGhost" />
+<link rel="stylesheet" type="text/css" href="../css/content.css" />
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<script src="../js/jquery.js"></script>
+<script src="../../src/lib/jquery/jquery.form.js"></script>
+<script src="../../src/lib/common/global.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/index.js"></script>
+</head>
+<body>
+  <!--header-->
+  <header>
+   <h1>Sweetcake 后台管理</h1>
+   <ul class="rt_nav">
+    <li><a href="../../src/html/index.html" target="_blank" class="website_icon">站点首页</a></li>
+    <li><a href="javascript:;" class="admin_icon">DeathGhost</a></li>
+    <li><a href="#" class="set_icon">账号设置</a></li>
+    <li><a href="javascript:;" class="quit_icon">安全退出</a></li>
+   </ul>
+  </header>
+  <!--aside nav-->
+  <aside class="lt_aside_nav content mCustomScrollbar">
+   <h2><a href="index.php">起始页</a></h2>
+   <ul>
+    <li>
+     <dl>
+      <dt>商品信息</dt>
+      <!--当前链接则添加class:active-->
+      <dd><a href="index.html" class="active">商品列表</a></dd>
+      <dd><a href="caketype.html">商品分类</a></dd>
+      <dd><a href="#">商品属性</a></dd>
+      <!-- <dd><a href="#">品牌管理</a></dd> -->
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>订单信息</dt>
+      <dd><a href="order.html">订单列表</a></dd>
+      <dd><a href="#">订单查询</a></dd>
+      <!-- <dd><a href="#">缺货登记</a></dd> -->
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>会员管理</dt>
+      <dd><a href="#">会员列表</a></dd>
+      <dd><a href="#">添加会员</a></dd>
+      <dd><a href="#">会员等级</a></dd>
+      <!-- <dd><a href="#">资金管理</a></dd> -->
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>基础设置</dt>
+      <dd><a href="#">站点基础设置</a></dd>
+      <dd><a href="#">SEO设置</a></dd>
+      <dd><a href="#">SQL语句查询</a></dd>
+      <dd><a href="#">模板管理</a></dd>
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>营销管理</dt>
+      <dd><a href="#">订阅列表</a></dd>
+      <dd><a href="#">邮件群发</a></dd>
+      <dd><a href="#">优惠打折</a></dd>
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>配送与支付设置</dt>
+      <dd><a href="#">配送方式</a></dd>
+      <dd><a href="#">支付方式</a></dd>
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>在线统计</dt>
+      <dd><a href="#">流量统计</a></dd>
+      <dd><a href="#">销售额统计</a></dd>
+     </dl>
+    </li>
+    <li>
+     <p class="btm_infor">© Sweetcake 版权所有</p>
+    </li>
+   </ul>
+  </aside>
+  <!-- section 商品列表 -->
+  <section class="box" >
+    <div class="contop">
+        <!-- <h4>商品查询/添加</h4> -->
+        <div class="searchbox">
+          <p class="tip">输入商品ID查询</p><span><input type="text" class="see_id"></span> <button class="search_btn">点击搜索</button>
+          <span class="search_err" style="color:#dbac72;"></span>
+        </div>
+        <div class="contop_r">
+          <button class="add_btn">添加商品</button>
+        </div>
+        <section class="addprodut mCustomScrollbar" >
+          <h2><strong style="color:grey;">商品添加内容布局</strong><button class="close_add">x</button></h2>
+          <ul class="ulColumn2">
+           <li>
+            <span class="item_name " style="width:120px;">商品名称：</span>
+            <input type="text" class="textbox textbox_295 produt_name" placeholder="商品名称"/>
+           </li>
+           <li>
+            <span class="item_name" style="width:120px;">商品ID：</span>
+            <input type="text" class="textbox textbox_295 produt_id" placeholder="商品ID"/><span class="id_title" style="color:#dbac72;"></span>
+            <!-- <span class="errorTips">错误提示信息...</span> -->
+           </li>
+           <li>
+            <span class="item_name" style="width:120px;">Drand：</span>
+            <input type="text" class="textbox textbox_295 produt_brand" placeholder="商品英文名"/>
+           </li>
+           <li>
+            <span class="item_name" style="width:120px;">商品信息：</span>
+            <textarea placeholder="商品介绍信息" class="textarea explain" style="width:500px;height:60px;"></textarea>
+           </li>
+           <li>
+            <span class="item_name" style="width:120px;">口感：</span>
+            <input type="text" class="textbox textbox_295 texture" value="樱花、芝士、抹茶、草莓" />
+           </li>
+           <li>
+            <span class="item_name" style="width:120px;">商品类别：</span>
+            <div class="checkbox">
+              <label><input type="checkbox" name="type" value="畅销新品Hot Sales">畅销新品Hot Sales</label>
+              <input type="checkbox" name="type" value="裸蛋糕 Naked Cakes" id="naked"><label for="naked">裸蛋糕 Naked Cakes</label>
+              <input type="checkbox" name="type" value="四拼蛋糕 Quartet" id="quartet"><label for="quartet">四拼蛋糕 Quartet</label><br>
+              <input type="checkbox" name="type" value="双拼蛋糕 H&H Cakes" id="hh"><label for="hh">双拼蛋糕 H&H Cakes</label>
+              <input type="checkbox" name="type" value="浪漫时刻Cake for love" id="love"><label for="love">浪漫时刻Cake for love</label>
+              <input type="checkbox" name="type" value="卡通蛋糕For Kids" id="kids"><label for="kids">卡通蛋糕For Kids</label><br>
+              <input type="checkbox" name="type" value="手工曲奇Cookies" id="cookies"><label for="cookies">手工曲奇Cookies</label>
+              <input type="checkbox" name="type" value="云南新鲜花盒[New~]" id="new-"><label for="new-">云南新鲜花盒[New~]</label>
+              <input type="checkbox" name="type" value="慕斯蛋糕 Mousse" id="mousse"><label for="mousse">慕斯蛋糕 Mousse</label><br>
+              <input type="checkbox" name="type" value="乳脂奶油蛋糕Anchor Cream Cakes" id="cream"><label for="cream">乳脂奶油蛋糕Anchor Cream Cakes</label>
+              <input type="checkbox" name="type" value="芝士蛋糕 Cheese Cakes" id="cheese"><label for="cheese">芝士蛋糕 Cheese Cakes</label><br>
+              <input type="checkbox" name="type" value="千层酥 Mille-feuilles" id="mille"><label for="mille">千层酥 Mille-feuilles</label>
+              <input type="checkbox" name="type" value="巧克力蛋糕 Chocolate Cakes" id="chocolate"><label for="chocolate">巧克力蛋糕 Chocolate Cakes</label><br>
+              <input type="checkbox" name="type" value="杯子蛋糕 Cupcakes" id="cup"><label for="cup">杯子蛋糕 Cupcakes</label>
+            </div>   
+            <li>
+            <span class="item_name" style="width:120px;">价格：</span>
+            <input type="text" class="textbox textbox_295 price" value="188.00" />
+           </li>
+           <li>
+              <span class="item_name" style="width:120px;">酒精：</span>
+              <select class="select alcohol">
+               <option>0</option>
+               <option>1</option>
+              </select>
+            </li>
+           <li>
+              <span class="item_name" style="width:120px;">适合场景：</span>
+              <input type="text" class="textbox textbox_295 scene" value="各种派对、生日、纪念日、下午茶" />
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">甜度：</span>
+              <select class="select sweetness">
+               <option>2</option>
+               <option>1</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>0</option>
+              </select>
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">适合人群：</span>
+              <input type="text" class="textbox textbox_295 suitable" value="各种人群"/>
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">保鲜：</span>
+              <input type="text" class="textbox textbox_295 fresh" value="0－4℃保藏12小时，11℃最佳食用" />
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">原材料：</span>
+              <input type="text" class="textbox textbox_295 material" placeholder="原材料"/>
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">商品规格一：</span>
+              <input type="text" class="textbox textbox_295  norms1" value="1.2磅:约13×13(cm) 454g ¥188.00" />
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">商品规格二：</span>
+              <input type="text" class="textbox textbox_295  norms2" value="2.2磅:约17×17(cm) 908g ¥298.00" />
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">商品规格三：</span>
+              <input type="text" class="textbox textbox_295  norms3" value="3.0磅:约23×23(cm)1362g ¥398.00" />
+            </li>
+            <li>
+              <span class="item_name" style="width:120px;">商品规格四：</span>
+              <input type="text" class="textbox textbox_295 norms4" value="5.0磅:约28×28(cm)2200g ¥598.00" />
+            </li>
+            
+           <li class="clearfix">
+           <form action="">
+             <span class="item_name" style="width:120px;">上传图片：</span>
+            <label class="input_img">
+             <input type="file" name="photos"/><br>
+             <input type="file" name="photos"/><br>
+             <input type="file" name="photos"/><br>
+             <input type="file" name="photos"/><br>
+             <input type="file" name="photos"/><br>
+             <!-- <span class="uploadImg"> -->
+             <span><input type="button" class="submit_img" name="" value="上传图片"></span>                 
+            </label>
+           </form>  
+           </li>
+           <li>
+            <span class="item_name link_tip_l" style="width:120px;"></span>
+            <input type="submit" class="link_btn link_btns"/>
+            <span class="link_tip" style="color:#dbac72;"></span>
+           </li>
+          </ul>
+        </section>
+    </div>
+    <div class="goodsbox">
+      <section class="modifyprodut" >
+        <h2><strong style="color:grey;">商品添加内容布局</strong><button class="close_modify">x</button></h2>
+        <ul class="ulColumn2">
+         <li>
+          <span class="item_name " style="width:120px;">商品名称：</span>
+          <input type="text" class="textbox textbox_295 modify_produt_name" placeholder="商品名称"/>
+         </li>
+         <li>
+          <span class="item_name" style="width:120px;">商品ID：</span>
+          <input type="text" class="textbox textbox_295 modify_produt_id" placeholder="商品ID"/><span class="id_title" style="color:#dbac72;"></span>
+          <!-- <span class="errorTips">错误提示信息...</span> -->
+         </li>
+         <li>
+          <span class="item_name" style="width:120px;">Drand：</span>
+          <input type="text" class="textbox textbox_295 modify_produt_brand" placeholder="商品英文名"/>
+         </li>
+         <li>
+          <span class="item_name" style="width:120px;">商品信息：</span>
+          <textarea placeholder="商品介绍信息" class="textarea modify_explain" style="width:500px;height:60px;"></textarea>
+         </li>
+         <li>
+          <span class="item_name" style="width:120px;">口感：</span>
+          <input type="text" class="textbox textbox_295 modify_texture" value="樱花、芝士、抹茶、草莓" />
+         </li>
+         <li>
+          <span class="item_name" style="width:120px;">商品类别：</span>
+           <div class="checkbox modifyCheckbox">
+              <label><input type="checkbox" name="type" id="hot" value="畅销新品Hot Sales"/>畅销新品Hot Sales</label>
+              <label><input type="checkbox" name="type" id="naked" value="裸蛋糕 Naked Cakes"/>裸蛋糕 Naked Cakes</label></span>
+              <label><input type="checkbox" name="type"  value="四拼蛋糕 Quartet" id="quartet"/>四拼蛋糕 Quartet</label><br>
+              <label><input type="checkbox" name="type" value="双拼蛋糕 H&H Cakes" id="hh"/>双拼蛋糕 H&H Cakes</label>
+              <label><input type="checkbox" name="type" value="浪漫时刻Cake for love" id="love"/>浪漫时刻Cake for love</label>
+              <label><input type="checkbox" name="type" value="卡通蛋糕For Kids" id="kids"/>卡通蛋糕For Kids</label><br>
+              <label><input type="checkbox" name="type" value="手工曲奇Cookies" id="cookies"/>手工曲奇Cookies</label>
+              <label><input type="checkbox" name="type" value="云南新鲜花盒[New~]" id="new-"/>云南新鲜花盒[New~]</label>
+              <label><input type="checkbox" name="type" value="慕斯蛋糕 Mousse" id="mousse"/>慕斯蛋糕 Mousse</label><br>
+              <label><input type="checkbox" name="type" value="乳脂奶油蛋糕Anchor Cream Cakes" id="cream"/>乳脂奶油蛋糕Anchor Cream Cakes</label>
+              <label><input type="checkbox" name="type" value="芝士蛋糕 Cheese Cakes" id="cheese"/>芝士蛋糕 Cheese Cakes</label><br>
+              <label><input type="checkbox" name="type" value="千层酥 Mille-feuilles" id="mille"/>千层酥 Mille-feuilles</label>
+              <label><input type="checkbox" name="type" value="巧克力蛋糕 Chocolate Cakes" id="chocolate"/>巧克力蛋糕 Chocolate Cakes</label><br>
+              <label><input type="checkbox" name="type" value="杯子蛋糕 Cupcakes" id="cup"/>杯子蛋糕 Cupcakes</label>
+            </div>  
+          </li>          
+          <li>
+          <span class="item_name" style="width:120px;">价格：</span>
+          <input type="text" class="textbox textbox_295 modify_price" value="188.00" />
+         </li>
+         <li>
+            <span class="item_name" style="width:120px;">酒精：</span>
+            <select class="select modify_alcohol">
+             <option>0</option>
+             <option>1</option>
+            </select>
+          </li>
+         <li>
+            <span class="item_name" style="width:120px;">适合场景：</span>
+            <input type="text" class="textbox textbox_295 modify_scene" value="各种派对、生日、纪念日、下午茶" />
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">甜度：</span>
+            <select class="select modify_sweetness">
+             <option>2</option>
+             <option>1</option>
+             <option>3</option>
+             <option>4</option>
+             <option>5</option>
+             <option>0</option>
+            </select>
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">适合人群：</span>
+            <input type="text" class="textbox textbox_295 modify_suitable" value="各种人群"/>
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">保鲜：</span>
+            <input type="text" class="textbox textbox_295 modify_fresh" value="0－4℃保藏12小时，11℃最佳食用" />
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">原材料：</span>
+            <input type="text" class="textbox textbox_295 modify_material" placeholder="原材料"/>
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">商品规格一：</span>
+            <input type="text" class="textbox textbox_295  modify_norms1" value="" />
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">商品规格二：</span>
+            <input type="text" class="textbox textbox_295  modify_norms2" value="" />
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">商品规格三：</span>
+            <input type="text" class="textbox textbox_295  modify_norms3" value="" />
+          </li>
+          <li>
+            <span class="item_name" style="width:120px;">商品规格四：</span>
+            <input type="text" class="textbox textbox_295 modify_norms4" value="" />
+          </li>
+          
+         <li class="clearfix">
+         <form action="">
+           <span class="item_name" style="width:120px;">上传图片：</span>
+          <label class="input_img">
+           <input type="file" name="photos"/><br>
+           <input type="file" name="photos"/><br>
+           <input type="file" name="photos"/><br>
+           <input type="file" name="photos"/><br>
+           <input type="file" name="photos"/><br>
+           <!-- <span class="uploadImg"> -->
+           <span><input type="button" class="submit_img" name="" value="上传图片"></span>                 
+          </label>
+         </form>  
+         </li>
+         <li>
+          <span class="item_name link_tip_l" style="width:120px;"></span>
+          <input type="submit" class="modify_link_btn link_btn"/>
+          <span class="modify_link_tip" style="color:#dbac72;"></span>
+         </li>
+        </ul>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>商品ID</th>
+            <th>图片(展示)</th>
+            <th>商品名</th>
+            <th>价格</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody class="mCustomScrollbar">            
+        </tbody>
+      </table>       
+    </div>
+  </section>
+</body>
+</html>

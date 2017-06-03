@@ -40,17 +40,16 @@ exports.Register = function(app){
         })
     })
 
-    // //设置地址为默认值
-    // app.post('/address_mr',urlencodedParser,function(request,response){
-    //     console.log(request.body.id);
-    //     db2.update(request.body.id,response);
-    // })
-
     //请求订单
     app.post('/order',urlencodedParser,function(request,response){
         db3.exists('order',function(result){
             response.send(result);
         })
+    })
+
+    //删除订单
+    app.post('/orderdel',urlencodedParser,function(request,response){
+        db3.del(request.body.orderid,response);
     })
 
     //获取订单详情

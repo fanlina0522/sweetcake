@@ -41,19 +41,25 @@ $(function() {
     });
     //发送内容
     function goodsajax(name, keyword) {
+        $('.loading').css({ display: 'block' })
         $.ajax({
             url: erp.baseUrl + "html/Group-list",
             data: { _name: name, _keyword: keyword },
             success: function(data) {
+                $('.product').empty();
                 console.log(data)
-                update(data)
+                // 开启定时器延时
+                setTimeout(function() {
+                    $('.loading').css({ display: 'none' });
+                    update(data)
+                }, 1000);
+
             }
         });
     }
 
     function update(data) {
-        //清空ul里面的元素
-        $('.product').empty()
+
         //结果集循环
         for (var i = 0; i < data.length; i++) {
             //id
@@ -76,7 +82,7 @@ $(function() {
                 <a href="../html/goodsdetail.html?id=${id}" class="product_a">
                     <p><img data-original="../img/${images}" alt="" src="../img/${images}"></p>
                     <div class="conWarp">
-                    <h4>${name} ${brand}</h4>
+                    <h4>${name}</h4>
                     <h5>￥${price}</h5></div>
                 </a>
             `);

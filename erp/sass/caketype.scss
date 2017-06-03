@@ -1,0 +1,30 @@
+$e:#dbac72;
+$b:#f2f2f2;
+$t:#9b4802;
+$a:#19a97b;
+
+@import 'style.css';
+
+.typetop{
+	width:100%;
+	padding:5px 10px;
+	.active{
+		color: #19a97b;
+	}
+	ul{
+		li{
+			:hover{
+				color:$a;
+			}
+			float:left;
+			button{
+				padding:8px ;
+				border:0;
+				background:#f8f8f8;				
+			}
+			margin:2px;
+			border-radius:6px;
+			border-bottom:3px solid #e9e9e9;
+		}
+	}
+}

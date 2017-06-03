@@ -39,9 +39,10 @@ ul{list-style:none;}
     main{
         flex:1;
         overflow-y: auto;
-        li{
+        .ordes{
             margin-top:10px;
             .ornum{
+                background:#fff;
                 position: relative;
                 font-size:14px;
                 line-height: 30px;
@@ -65,29 +66,31 @@ ul{list-style:none;}
                         img{width:100%;}
                     }
                     .or_up_right{
+                        font-size:14px;
                         float:left;
                         width:65%;
                         padding-left:10px;
-                        .qty_price{
-                            position: relative;
-                            padding-top:20%;
-                            .goodsqty{
-                                position: absolute;
-                                bottom: 0px;
-                                right:0;
-                            }
-                        }
+                       .qty_price{
+                           padding-top:20%;
+                           position: relative;
+                           .goodsqty{
+                               position: absolute;
+                               bottom: 0;
+                               right:-20px;
+                           }
+                       }
+
                     }
                 }
                 .or_down{
                     padding: 0 10px;
                     height:30px;
                     display:flex;
+                    font-size: 14px;
                     line-height: 30px;
                     >p{
                         flex:1;
                         text-align: right;
-                        font-size: 12px;
                         line-height: 30px;
                         position: relative;
                     }
@@ -97,7 +100,7 @@ ul{list-style:none;}
                 margin-top:10px;
                 background: #fff;
                 p{
-                    font-size: 14px;
+                    font-size: 12px;
                     padding-left:10px;
                     border-bottom:1px solid #eee;
                     height:30px;
@@ -106,7 +109,7 @@ ul{list-style:none;}
                     position: relative;
 
                     &:nth-of-type(1){
-                        font-size: 16px;
+                        font-size: 14px;
                         color:#000;
                     }
                     span{

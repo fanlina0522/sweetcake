@@ -217,7 +217,7 @@ body.jconfirm-noscroll {
 }
 .jconfirm.jconfirm-white .jconfirm-box .buttons button.btn-default {
   box-shadow: none;
-  color: #333;
+  color: #dbac72;
 }
 .jconfirm.jconfirm-white .jconfirm-box .buttons button.btn-default:hover {
   background: #ddd;

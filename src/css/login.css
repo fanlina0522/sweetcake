@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url(Group-list.css);
+/*登录*/
+.login_bg {
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    background: #fffff0;
+    opacity: 0.9;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#logo {
+       margin: 12% auto;
+    width: 38.25%;
+}
+#logo img {
+    width: 100%;
+}
+.login_bg form {
+
+    width: 80%;
+    margin: 110px auto;
+    text-align: left;
+}
+.login_bg  form div.userName,.login_bg  form div.passWord {
+    border: 1px solid #c1c1c1;
+    padding: 0.3125rem 0 0.3125rem 3%;
+    height: 22%;
+    background: #ffffff; 
+}
+.login_bg form div.userName {
+    border-bottom: 0;
+    -webkit-border-top-left-radius: 0.45em;
+    -webkit-border-top-right-radius: 0.45em;
+    -moz-border-radius-topleft: 0.45em;
+    -moz-border-radius-topright: 0.45em;
+    border-top-left-radius: 0.45em;
+    border-top-right-radius: 0.45em;
+    margin-bottom:1.5625rem; 
+
+}
+.login_bg form .lable{
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.login_bg form div.userName input,.login_bg  form div.passWord input {
+    width: 68%;
+    height:27px;
+    line-height: 27px;
+      border: none;
+    font-size:0.75rem;
+outline:none;
+
+}
+
+
+.login_bg  form div.userName,.login_bg  form div.passWord {
+    border: 1px solid #deb47f;
+   /* padding: 3.5% 0 4% 3%;*/
+    height: 27px;
+    background: #fff;
+}
+.choose_box {
+    height: 4.5em;
+    line-height: 4.5em;
+    padding: 0 5px;
+    margin: 10px auto;
+}
+.choose_box div {
+    float: left;
+}
+.choose_box a {
+    float: right;
+    color: #000;
+}
+.login_btn {
+    width: 90%;
+    display: block;
+    padding: 3% 0;
+    background: #deb47f;
+    font-size: 1em;
+    font-family: "Microsoft YaHei";
+    color: #374782;
+    border: 1px solid #deb47f;
+    text-align: center;
+    border-radius:40px;
+    margin-left:1.15rem; 
+}
+.other_login {
+    width: 80%;
+    height: 15px;
+    position: absolute;
+    top: 60%;
+    margin: 0 10%;
+}
+.other_login .other {
+    width: 28%;
+    height: 8px;
+    border-bottom: 1px solid #2f2c59;
+}
+.other_login .other, .other_login span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.other_login span {
+    width: 40%;
+    font-size: 0.875rem;
+}
+.other_login .other {
+    width: 28%;
+    height: 8px;
+    border-bottom: 1px solid #2f2c59;
+}
+.other_choose {
+    width: 74%;
+    top: 70%;
+    position: absolute;
+    margin: 0 13%;
+}
+.login_bg .other_choose a {
+    display: block;
+    float: left;
+   /* border: 2px solid #dbac72;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;*/
+    position: absolute;
+}
+.other_choose a img {
+    width: 90%;
+    padding: 14% 0;
+}
+.other_choose a:nth-child(2) {
+    left: 42%;
+}
+.other_choose a:nth-child(3) {
+    left: 80%;
+}

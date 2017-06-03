@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>后台管理系统</title>
+<meta name="author" content="DeathGhost" />
+<link rel="stylesheet" type="text/css" href="../css/content.css" />
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<![endif]-->
+<script src="../js/jquery.js"></script>
+<script src="../../src/lib/jquery/jquery.form.js"></script>
+<script src="../../src/lib/common/global.js"></script>
+<script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/order.js"></script>
+</head>
+<body>
+  <!--header-->
+  <header>
+   <h1>Sweetcake 后台管理</h1>
+   <ul class="rt_nav">
+    <li><a href="http://www.baidu.com" target="_blank" class="website_icon">站点首页</a></li>
+    <li><a href="#" class="admin_icon">DeathGhost</a></li>
+    <li><a href="#" class="set_icon">账号设置</a></li>
+    <li><a href="login.html" class="quit_icon">安全退出</a></li>
+   </ul>
+  </header>
+  <!--aside nav-->
+  <aside class="lt_aside_nav content mCustomScrollbar">
+   <h2><a href="index.php">起始页</a></h2>
+   <ul>
+    <li>
+     <dl>
+      <dt>商品信息</dt>
+      <!--当前链接则添加class:active-->
+      <dd><a href="index.html" >商品列表</a></dd>
+      <dd><a href="caketype.html">商品分类</a></dd>
+      <dd><a href="#">商品属性</a></dd>
+      <!-- <dd><a href="#">品牌管理</a></dd> -->
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>订单信息</dt>
+      <dd><a href="order.html" class="active">订单列表</a></dd>
+      <dd><a href="#">订单查询</a></dd>
+      <!-- <dd><a href="#">缺货登记</a></dd> -->
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>会员管理</dt>
+      <dd><a href="#">会员列表</a></dd>
+      <dd><a href="#">添加会员</a></dd>
+      <dd><a href="#">会员等级</a></dd>
+      <!-- <dd><a href="#">资金管理</a></dd> -->
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>基础设置</dt>
+      <dd><a href="#">站点基础设置</a></dd>
+      <dd><a href="#">SEO设置</a></dd>
+      <dd><a href="#">SQL语句查询</a></dd>
+      <dd><a href="#">模板管理</a></dd>
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>营销管理</dt>
+      <dd><a href="#">订阅列表</a></dd>
+      <dd><a href="#">邮件群发</a></dd>
+      <dd><a href="#">优惠打折</a></dd>
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>配送与支付设置</dt>
+      <dd><a href="#">配送方式</a></dd>
+      <dd><a href="#">支付方式</a></dd>
+     </dl>
+    </li>
+    <li>
+     <dl>
+      <dt>在线统计</dt>
+      <dd><a href="#">流量统计</a></dd>
+      <dd><a href="#">销售额统计</a></dd>
+     </dl>
+    </li>
+    <li>
+     <p class="btm_infor">© Sweetcake 版权所有</p>
+    </li>
+   </ul>
+  </aside>
+  <!-- section 订单列表 -->
+  <section class="order_box">
+    <div class="contop">
+      <div class="searchbox">
+        <p class="tip">输入订单ID查询</p><span><input type="text" class="see_id"></span> <button class="search_btn">点击搜索</button>
+        <span class="search_err" style="color:#dbac72;"></span>
+      </div>
+    </div>
+    <div class="order_outbox">
+      <div class="seeorder">
+        <button class="close_add">x</button>
+        <p><span>订单id :</span><span class="orderID"></span></p>
+        <p><span>下单用户 :</span><span class="username"></span></p>
+        <p class="goodsname"><span>下单商品 :</span><div class="name"
+         style="color:#dbac72"></div></p>
+        <p><span>地址 :</span><span class="address"></span></p>
+        <p><span>下单时间 :</span><span class="orderTime"></span></p>
+        <p><span>备注 :</span><span class="less"></span></p>
+        <p><span>数量 :</span><span class="num"></span></p>
+        <p><span>总价 :</span><span class="totalprice"></span></p>
+        <p><span>配送日期 :</span><span class="deliveryDate"></span></p>
+        <p><span>配送时间 :</span><span class="deliveryTime"></span></p>
+        <p><span>订购手机 :</span><span class="orderPhone"></span></p>
+        <p><span>最后价格 :</span><span class="finalprice"></span></p>
+        <p><span>巧克力牌 :</span><span class="chocolateBrand"></span></p>
+        <p><span>祝福贺卡 :</span><span class="greetingCard"></span></p>
+        <p><span>状态 :</span><span class="paid_tip"></span></p>
+        <p><span>付款时间 :</span><span class="paidTime"></span></p>
+        <p><span>发货时间 :</span><span class="shippedTime"></span></p>
+        <p><span>完成时间 :</span><span class="completedTime"></span></p>
+        <p><span>派送员 :</span><span class="shippedman"></span></p>
+        <p><span>派送员电话 :</span><span class="shippedman"></span></p>
+        
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>订单ID</th>
+            <th>下单用户</th>
+            <th>下单商品</th>
+            <th>地址</th>
+            <th>下单时间</th>
+            <th>备注</th>
+            <th>数量</th>
+            <th>总价</th>
+            <th>状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>            
+        </tbody>
+      </table>       
+    </div>
+  </section>  
+</body>
+</html>

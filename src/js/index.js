@@ -30,9 +30,9 @@ $(function(){
             //生成内容
             li.html(`
                 <a href="html/goodsdetail.html?id=${id}">
+                        <img src="img/${images}" data-original="img/${images}">
                         <h4>${name}</h4>
                         <h4>${brand}</h4>
-                        <img src="img/${images}" data-original="img/${images}">
                 </a>
             `);
             //插入ul
@@ -43,6 +43,20 @@ $(function(){
     $(".hotCake img").lazyload({
         effect: "fadeIn" //淡入淡出
     });
+
+    //点击手机显示遮盖层
+    $('.icon-shouji').click(function(){
+        $('.show').css({display:'block'});
+        $('<div/>').addClass('contact').appendTo($('#container')).html(
+                `<div>呼叫</div>
+                 <div>添加到联系人</div> `
+        );
+    })
+
+    $('.show').click(function(){
+        $('.show').css({display:'block'});
+        $('.contact').remove();
+    })
 
     //侧边栏和遮罩层的显示
     $('.footshow').click(function() {

@@ -7,7 +7,7 @@ $(function(){
 						<p class="selfMsg"><span class="name">${item.username}</span>
 							<span class="phone">${item.phone}</span>
 						</p>
-						<p><span class="city">${item.address.replace(',','')}</span>
+						<p><span class="city">${item.address.replace(/,/g ,'')}</span>
 						<span class="xxadd">${item.addrs}</span></p>
 						<p><span class="mr">设为默认</span><span class="reset">编辑</span></p>
 					</li>`;

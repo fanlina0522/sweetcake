@@ -1,7 +1,7 @@
-var db = require('./db.common').db;
+﻿var db = require('./db.common').db;
 
 
-//数据是否存在
+//register
 var exists = function(_collection, data, key, callback){
 	db.open(function(error, db){
 		if(error){
@@ -15,13 +15,24 @@ var exists = function(_collection, data, key, callback){
 				var obj = {};
 				obj[key] = data[key];
 				collection.find(obj).toArray(function(err, docs){
-					callback(docs[0])
+					console.log(docs)
+					if(docs[0]){
+						callback({status:'用户名已存在'})
+						
+					}else{
+						collection.insert(data);
+						callback({status:'注册成功',login:true})
+					}
+					db.close();
+					
 				});
 			}
-			db.close();
+			// db.close();
 		})
 	})	
 }
+
+
 
 
 //query查询

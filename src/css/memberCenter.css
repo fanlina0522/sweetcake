@@ -36,12 +36,44 @@ ul {
 
 #container main header {
   height: 181.25px;
+  position: relative;
 }
 
-#container main header img {
+#container main header .back {
   width: 100%;
   border: 0;
   height: 181.25px;
+}
+
+#container main header .touxiang {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 32%;
+  left: 40px;
+  border-radius: 50%;
+}
+
+#container main header .user {
+  position: absolute;
+  top: 48%;
+  left: 120px;
+}
+
+#container main header .user button {
+  background-color: #dbac72;
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+
+#container main header .logined {
+  position: absolute;
+  top: 48%;
+  left: 120px;
 }
 
 #container main .box > ul {

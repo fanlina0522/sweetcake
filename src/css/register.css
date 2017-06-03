@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/*重置样式表*/
+/*==========样式重置===========*/
+@import url(../font/iconfont.css);
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, l, ol, dl, dt, dd {
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+header, footer, section, nav, main {
+  display: block;
+}
+
+body {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  color: #dbac72;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #dbac72;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+html, body {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #fffff0;
+}
+
+.container {
+  height: 100%;
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+header .top {
+  display: flex;
+  height: 44px;
+  background: #dbac72;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+}
+
+header .top .top_l {
+  width: 46px;
+  height: 44px;
+  float: left;
+  position: absolute;
+  font-size: 24px;
+  margin-left: 2px;
+}
+
+header .top .top_l a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  color: #fff;
+  font-size: 24px;
+}
+
+header .top h4 {
+  font-size: 18px;
+  width: 100%;
+}
+
+main .add-address-form .search_bg {
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+}
+
+main .add-address-form .search_bg .add_box {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  border-bottom: #e7e7e7 solid 1px;
+}
+
+.add_box.tips{
+  font-size: 14px;
+  color: red;
+  line-height: 50px;
+}
+
+main .add-address-form .search_bg .add_box .add_title {
+  width: 80px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.add_title span{float: right;margin-right: 10px}
+
+main .add-address-form .search_bg .add_box .add_text {
+  width: 70%;
+  height: 50px;
+  float: left;
+}
+
+main .add-address-form .search_bg .add_box .add_text input {
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  line-height: 32px;
+  vertical-align: top;
+  text-align: left;
+  color: #dbac72;
+  outline: none;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+
+main .add-address-form .search_bg .add_box .add_text textarea {
+  width: 95%;
+  height: 80px;
+  margin: 0;
+  line-height: 25px;
+  padding: 10px 0 10px 5px;
+  background: none;
+  resize: none;
+  border: none;
+  outline: none;
+  font-family: "微软雅黑";
+  font-size: 14px;
+}
+
+main .add-address-form .search_bg .add_box .add_detailed {
+  height: 80px;
+}
+
+main .add-address-form .scree_but {
+  width: auto;
+  overflow: hidden;
+  padding: 0 6%;
+  height: 42px;
+  margin-top: 20px;
+}
+
+main .add-address-form .scree_but .scr_qd {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  float: right;
+  background: #dbac72;
+  border-radius: 3px;
+}
+
+main .add-address-form .scree_but .scr_qd input {
+  display: block;
+  background: #dbac72;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  line-height: 34px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  font-family: Microsoft YaHei;
+}

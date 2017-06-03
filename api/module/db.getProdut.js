@@ -1,4 +1,4 @@
-var db = require('./db.common').db;
+var db = require('./db.common.js').db;
 
 // id查询商品
 var getProdut = function(_collection, data, key, callback){
@@ -26,6 +26,32 @@ var getProdut = function(_collection, data, key, callback){
 		})
 	})	
 }
+// type查询商品
+var getType = function(_collection, data, key, callback){
+	db.open(function(error, db){
+		if(error){
+			console.log('connect db:', error);
+		}
+		//_collection=>cake => 集合名（表名）
+		db.collection(_collection, function(error, collection){
+			if(error){																								
+				console.log(error)	
+			} else {
+				var obj = {};
+				obj[key] = data[key];
+				collection.find(obj).toArray(function(err, docs){
+					if (docs.length>=1) {
+						callback(docs);
+					}else{
+						callback();
+					}
+					
+				});
+			}
+			db.close();
+		})
+	})	
+}
 
 // 获取所有商品
 var all = function(_collection, data, key, callback){
@@ -36,33 +62,16 @@ var all = function(_collection, data, key, callback){
 		//_collection=>cake => 集合名（表名）
 		db.collection(_collection, function(error, collection){
 			if(error){
-				console.log(error)	
+				console.log(error);
+				db.close();
 			} else {				
 				collection.find().toArray(function(err, docs){
 					// console.log(docs)
 					callback(docs);
+					db.close();
 				});
 			}
-			db.close();
-		})
-	})	
-}
-
-// 修改商品
-var setProdut = function(_collection, data, key, callback){
-	db.open(function(error, db){
-		if(error){
-			console.log('connect db:', error);
-		}
-		//_collection=>cake => 集合名（表名）
-		db.collection(_collection, function(error, collection){
-			if(error){
-				console.log(error)	
-			} else {
-				console.log(data);
-				collection.insert(data);
-			}
-			db.close();
+			
 		})
 	})	
 }
@@ -91,7 +100,8 @@ var saveProdut = function(_collection, data, key, callback){
 					}else{
 						data.images = JSON.parse(data.images);
 						data.norms = JSON.parse(data.norms);
-						console.log(data);
+						data.type = JSON.parse(data.type);
+						// console.log(data);
 						var obj = {};
 						for(var key in data){
 							obj[key] = data[key];
@@ -105,6 +115,34 @@ var saveProdut = function(_collection, data, key, callback){
 				
 			}
 			
+		})
+	})	
+}
+
+// 修改商品
+var modifyProdut = function(_collection, data, key, callback){
+	db.open(function(error, db){
+		if(error){
+			console.log('connect db:', error);
+		}
+		//_collection=>cake => 集合名（表名）
+		db.collection(_collection, function(error, collection){
+			if(error){
+				console.log(error);	
+			} else {
+				// data._id = JSON.parse(data._id);
+				data.norms = JSON.parse(data.norms);
+				data.type = JSON.parse(data.type);
+				
+				var obj = {};
+				for(var key in data){
+					obj[key] = data[key];
+				}
+				console.log(obj);
+				collection.update({'id':data.id},{$set:obj});
+				callback(data);
+				db.close();
+			}			
 		})
 	})	
 }
@@ -139,8 +177,10 @@ exports.all = all;
 
 exports.getProdut = getProdut;
 
-exports.setProdut = setProdut;
+exports.getType = getType;
 
 exports.saveProdut = saveProdut;
 
 exports.getProdut_id = getProdut_id;
+
+exports.modifyProdut = modifyProdut;

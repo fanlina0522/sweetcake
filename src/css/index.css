@@ -88,6 +88,28 @@ a {
   display: none;
 }
 
+#container .contact {
+  position: fixed;
+  width: 60%;
+  height: 12%;
+  background: #fff;
+  opacity: 1;
+  z-index: 100;
+  left: 20%;
+  top: 40%;
+}
+
+#container .contact div {
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#container .contact div:nth-of-type(1) {
+  border: 1px solid #eee;
+}
+
 #container main {
   overflow-y: auto;
   overflow-x: hidden;

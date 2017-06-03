@@ -1,10 +1,11 @@
 require(['config'],function(){
-	require(['jquery','carousel'],function(){
+	require(['jquery','carousel','confirm'],function(){
 		$(function(){
 
             var goodsid;
             var imgUrl;
             var size;
+            var showPrice;
 
             //页面传递参数接收
             var goodsId = window.location.search;
@@ -38,8 +39,8 @@ require(['config'],function(){
                 $('.typeList005').after('适合人群：' + response.suitable);
                 $('.typeList006').after('保鲜条件：' + response.fresh);
                 $('.typeList007').after('原材料：' + response.material);
-                //规格
 
+                //规格
                 var goodsSize = response.norms.map(function(item){
                     
                     var price = item.slice(-6);
@@ -49,7 +50,7 @@ require(['config'],function(){
                     return `<label for="proType${cakeId}">
                                 <div class='item pd-spec-sx enable' data-id=${goodsid+cakeId} for="proType${cakeId}" data-price="${price}">
                                     <p class="checkedWarp">
-                                        <input type="radio" id="proType${cakeId}" name="proType" >
+                                        <input type="radio" id="proType${cakeId}" name="proType">
                                             <span>${size}</span>
                                         <strong>&yen;${price}</strong>
                                     </p>
@@ -59,7 +60,11 @@ require(['config'],function(){
                 
                 $('.selectTypeList').html(goodsSize);
 
-                $("input[type='radio']").eq(0).prop("checked", true);
+                //初始化勾选
+                $("input[type='radio']:first").attr({'checked':true});
+                showPrice = $("input[type='radio']").eq(0).parents('.item').addClass('shadebox').attr('data-price');
+                $('#pd-sale-price').html('￥'+ (showPrice*$('#num').val()).toFixed(2));
+
 
 
 
@@ -102,12 +107,13 @@ require(['config'],function(){
                 $('.tabCon').eq($idx).show();
 
             })
+            
 
             //勾选规格
-            var showPrice;
-            $('.selectTypeList').on('click',function(e){
-                showPrice = $(e.target).parents('.item').attr('data-price');
-                $('#pd-sale-price').html('￥'+showPrice*$('#num').val());
+            $('.selectTypeList').on('click','.item',function(e){
+                $('.item').removeClass('shadebox');
+                showPrice = $(e.target).parents('.item').toggleClass('shadebox').attr('data-price');
+                $('#pd-sale-price').html('￥'+(showPrice*$('#num').val()).toFixed(2));
             })
 
             //cake_size_acounts 增减数量
@@ -117,19 +123,28 @@ require(['config'],function(){
                     $acounts=1;
                 }
                 $('#num').attr({'value':$acounts});
-                $('#pd-sale-price').html('￥'+showPrice*$('#num').val());
+                $('#pd-sale-price').html('￥'+ (showPrice*$('#num').val()).toFixed(2));
             })
+
 
             $('.add').on('click',function(){
                 $acounts = Number($('#num').val())+ 1;
                 $('#num').attr({'value':$acounts});
-                $('#pd-sale-price').html('￥'+showPrice*$('#num').val());
+                $('#pd-sale-price').html('￥'+ (showPrice*$('#num').val()).toFixed(2));
 
             })
 
 
             //底部购物车导航
             //计算总数量
+            var cartList = localStorage.getItem('order');
+            cartList = cartList ? JSON.parse(cartList) : [];
+            var total = 0;
+            cartList.map(function(item){
+                total += Number(item.acount);
+            });
+            $('#toCart>i').text(total);
+
 
             $('#addcart-button').on('click',function(){
 
@@ -146,7 +161,7 @@ require(['config'],function(){
                 $('#pd-sale-price').text('￥'+ carPrice);
 
                 //本地存储
-                var cartList = localStorage.getItem('order');
+                cartList = localStorage.getItem('order');
                 cartList = cartList ? JSON.parse(cartList) : [];
 
                 //判断商品是否存在
@@ -161,6 +176,8 @@ require(['config'],function(){
 
                         // 写入本地存储
                         localStorage.setItem('order',JSON.stringify(cartList)); 
+
+                        $.alert('修改数量成功')
                                            
                         break;
                     }
@@ -181,10 +198,12 @@ require(['config'],function(){
                     cartList.push(data);
 
                     localStorage.setItem('order',JSON.stringify(cartList));
+
+                    $.alert('增加商品成功')
                 }
 
                 //矫正数量
-                var total = 0;
+                total = 0;
                 cartList.map(function(item){
                     total += Number(item.acount);
                 })

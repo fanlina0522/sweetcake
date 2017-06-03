@@ -100,55 +100,64 @@ ul {
   right: 10px;
 }
 
-#container main .orMsgList li .or_msg .or_up, #container main .orthers li .or_msg .or_up {
+#container main .orMsgList li .or_up, #container main .orthers li .or_up {
   border-bottom: 1px solid #eee;
   padding: 10px;
 }
 
-#container main .orMsgList li .or_msg .or_up .or_up_left, #container main .orthers li .or_msg .or_up .or_up_left {
+#container main .orMsgList li .or_up .or_up_left, #container main .orthers li .or_up .or_up_left {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
-#container main .orMsgList li .or_msg .or_up .or_up_left img, #container main .orthers li .or_msg .or_up .or_up_left img {
+#container main .orMsgList li .or_up .or_up_left img, #container main .orthers li .or_up .or_up_left img {
   width: 100%;
 }
 
-#container main .orMsgList li .or_msg .or_up .or_up_right, #container main .orthers li .or_msg .or_up .or_up_right {
+#container main .orMsgList li .or_up .or_up_right, #container main .orthers li .or_up .or_up_right {
   float: left;
   width: 65%;
   padding-left: 10px;
+  font-size: 14px;
+}
+
+#container main .orMsgList li .or_up .or_up_right .goodsnorms, #container main .orthers li .or_up .or_up_right .goodsnorms {
+  color: #dbac72;
+  line-height: 30px;
+  font-size: 12px;
+}
+
+#container main .orMsgList li .or_up .or_up_right .qty_price, #container main .orthers li .or_up .or_up_right .qty_price {
   position: relative;
+  padding-top: 10%;
 }
 
-#container main .orMsgList li .or_msg .or_up .or_up_right .goodsnorms, #container main .orthers li .or_msg .or_up .or_up_right .goodsnorms {
-  padding-top: 20px;
-  line-height: 35px;
-  color: #00aa00;
+#container main .orMsgList li .or_up .or_up_right .qty_price .goodsprice, #container main .orthers li .or_up .or_up_right .qty_price .goodsprice {
+  color: red;
 }
 
-#container main .orMsgList li .or_msg .or_up .or_up_right .goodsqty, #container main .orthers li .or_msg .or_up .or_up_right .goodsqty {
+#container main .orMsgList li .or_up .or_up_right .qty_price .goodsqty, #container main .orthers li .or_up .or_up_right .qty_price .goodsqty {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  right: -18px;
 }
 
-#container main .orMsgList li .or_msg .or_down, #container main .orthers li .or_msg .or_down {
+#container main .orMsgList li .or_down, #container main .orthers li .or_down {
   padding: 0 10px;
 }
 
-#container main .orMsgList li .or_msg .or_down > p, #container main .orthers li .or_msg .or_down > p {
+#container main .orMsgList li .or_down > p, #container main .orthers li .or_down > p {
   text-align: right;
-  font-size: 12px;
+  font-size: 14px;
+  color: red;
   line-height: 30px;
 }
 
-#container main .orMsgList li .or_msg .or_down .btn, #container main .orthers li .or_msg .or_down .btn {
+#container main .orMsgList li .or_down .btn, #container main .orthers li .or_down .btn {
   text-align: right;
   padding-bottom: 10px;
 }
 
-#container main .orMsgList li .or_msg .or_down .btn input, #container main .orthers li .or_msg .or_down .btn input {
+#container main .orMsgList li .or_down .btn input, #container main .orthers li .or_down .btn input {
   box-sizing: border-box;
   width: 80px;
   height: 30px;
@@ -158,7 +167,7 @@ ul {
   border: 1px solid #eee;
 }
 
-#container main .orMsgList li .or_msg .or_down .btn #ordetails, #container main .orthers li .or_msg .or_down .btn #ordetails {
+#container main .orMsgList li .or_down .btn #ordetails, #container main .orthers li .or_down .btn #ordetails {
   border: 0;
   background: #dbac72;
   color: #fff;

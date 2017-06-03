@@ -5,15 +5,20 @@
 	<title>购物车-果吉多蛋糕</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="../css/car.css">
+	<link rel="stylesheet" href="../lib/jquery-confirm/jquery-confirm.css">
 	 <!--<script  src ="../lib/require.js" data-main ="../js/car.js"></script>-->
 	<script src="../lib/jquery/jquery-3.1.1.js"></script>
 	<script src="../js/car.js"></script>
 	<script src="../js/goback.js"></script>
+	<script src="../lib/common/global.js"></script>
+	<script src="../lib/jquery-confirm/jquery-confirm.js"></script>
 </head>
 <body>
 	<header>
 		<div class="container">
 			<div class="top">
+				<span class="backhome"><a href="../index.html"></a></span>
+
 				<div class="top_l">
 					<a  class="iconfont icon-fanhui" href="#">
 						<!-- &lt; -->
@@ -36,7 +41,7 @@
 					<div class="no_addres">
 						<div class="add_addres">
 							<a href="vip/address.html">
-								<span>点击选择收货地址</span>
+								<span class="chooseAdd">点击选择收货地址</span>
 								<i class="iconfont icon-xiayibu"></i>
 							</a>
 							
@@ -190,7 +195,7 @@
 									<label for="chocolateCard1">需要</label>
 								</p>
 								<p class="checkbox">
-									<input type="radio" id="chocolateCard2" name="chocolateCard" value="2">
+									<input type="radio" id="chocolateCard2" name="chocolateCard" value="2" checked="checked">
 									<label for="chocolateCard2">不需要</label>
 								</p>
 							</div>
@@ -232,7 +237,7 @@
 									<label for="greetingCard1">需要</label>
 								</p>
 								<p class="checkbox">
-									<input type="radio" id="greetingCard2" name="greetingCard" value="2">
+									<input type="radio" id="greetingCard2" name="greetingCard" value="2" " checked="checked">
 									<label for="greetingCard2">不需要</label>
 								</p>
 							</div>
@@ -280,28 +285,28 @@
 						</header>
 						<div class="dis_time">
 							<select id="selectTtime" id="dis_time" class="mainColor">
-								<option value="0">10:00-11:00</option>
-								<option value="1">10:30-11:30</option>
-								<option value="2">11:00-12:00</option>
-								<option value="3">11:30-12:30</option>
-								<option value="4">12:00-13:00</option>
-								<option value="5">12:30-13:30</option>
-								<option value="6">13:00-14:00</option>
-								<option value="7">13:30-14:30</option>
-								<option value="8">14:00-15:00</option>
-								<option value="9">14:30-15:30</option>
-								<option value="10">15:00-16:00</option>
-								<option value="11">15:30-16:30</option>
-								<option value="12">16:00-17:00</option>
-								<option value="13">16:30-17:30</option>
-								<option value="14">17:00-18:00</option>
-								<option value="15">17:30-18:30</option>
-								<option value="16">18:00-19:00</option>
-								<option value="17">18:30-19:30</option>
-								<option value="18">19:00-20:00</option>
-								<option value="19">19:30-20:30</option>
-								<option value="20">20:00-21:00</option>
-								<option value="21">20:30-21:30</option>
+								<option value="10:00-11:00">10:00-11:00</option>
+								<option value="10:30-11:30">10:30-11:30</option>
+								<option value="11:00-12:00">11:00-12:00</option>
+								<option value="11:30-12:30">11:30-12:30</option>
+								<option value="12:00-13:00">12:00-13:00</option>
+								<option value="12:30-13:30">12:30-13:30</option>
+								<option value="13:00-14:00">13:00-14:00</option>
+								<option value="13:30-14:30">13:30-14:30</option>
+								<option value="14:00-15:00">14:00-15:00</option>
+								<option value="14:30-15:30">14:30-15:30</option>
+								<option value="15:00-16:00">15:00-16:00</option>
+								<option value="15:30-16:30">15:30-16:30</option>
+								<option value="16:00-17:00">16:00-17:00</option>
+								<option value="16:30-17:30">16:30-17:30</option>
+								<option value="17:00-18:00">17:00-18:00</option>
+								<option value="17:30-18:30">17:30-18:30</option>
+								<option value="18:00-19:00">18:00-19:00</option>
+								<option value="18:30-19:30">18:30-19:30</option>
+								<option value="19:00-20:00">19:00-20:00</option>
+								<option value="19:30-20:30">19:30-20:30</option>
+								<option value="20:00-21:00">20:00-21:00</option>
+								<option value="20:30-21:30">20:30-21:30</option>
 							</select>
 							<p>如需加当日急单，请致电400-998-2928说明情况，我们会尽全力为您安排！</p>
 						</div>
@@ -336,17 +341,28 @@
 						</div>
 					</article>
 				</div>
-				<div class="charging">
+<!-- 				<div class="charging">
 					<p class="freight">运费 : <span id="freight">¥0.00</span></p>
 					<p class="Red">红包 : <span id="Red">¥0.00</span></p>
 					<p class="totalPrice">总计 : <span id="totalPrice">¥0.00</span></p>
 				</div>
 				<div class="buy_box">
 					<div class="button" id="payment-btn">微信安全支付</div>
-				</div>
+				</div> -->
 				
 			</section>
 		</div>
 	</main>
+	<footer>
+		<div class="container">
+			<ul>
+				<li>
+					<span class="totalPrice">总价：￥0.00</span>
+				</li>
+				<li>
+					<span class="payBtn">立即支付</span>
+				</li>
+			</ul>
+	</footer>
 </body>
 </html>

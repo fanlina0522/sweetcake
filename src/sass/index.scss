@@ -63,6 +63,25 @@ a{text-decoration:none;color:$maincolor;font-size:12px;}
 		z-index: 10;
 		display: none;
 	}
+	.contact{
+		position: fixed;
+		width:60%;
+		height:12%;
+		background: #fff;
+		opacity: 1;
+		z-index: 100;
+		left:20%;
+		top:40%;
+		div{
+			height:30px;
+			font-size: 12px;
+			line-height: 30px;
+			padding-left:10px;
+			&:nth-of-type(1){
+				border: 1px solid #eee;
+			}
+		}
+	}
 	main{
 		overflow-y: auto;
 		overflow-x:hidden;

@@ -6,11 +6,31 @@
 	<title>个人中心</title>
 	<link rel="stylesheet" href="../../css/memberCenter.css">
 	<link rel="stylesheet" href="../../font/iconfont.css">
+	<script src="../../lib/jquery/jquery-3.1.1.js"></script>
+	<script>
+		$(function(){
+		    //读取session,如果存在，则显示.logined，如果不存在，则显示user
+			if(!window.sessionStorage.getItem('name')){
+			    $('.user').show();
+			    $('.logined').hide();
+			}else{
+			    $('.user').hide();
+			    $('.logined').text(window.sessionStorage.getItem('name')).show();
+			}
+		})
+	</script>
 </head>
 <body>
 	<div id="container">
 		<main>
-			<header><img src="../../img/index/homeLbt1.jpg" alt=""></header>
+			<header><img src="../../img/center.jpg" alt="" class="back">
+					<img src="../../img/touxiang.jpg" alt="" class="touxiang">
+					<div class="user">
+						<a href="../Login.html"><button>登录</button></a>
+						<a href="../register.html"><button>注册</button></a>
+					</div>
+					<div class="logined"></div>
+			</header>
 			<div class="box">
 				<ul>
 					<li>
@@ -30,9 +50,6 @@
 					</li>
 					<li>
 						<a href="comment.html"><i class="iconfont icon-huawen"></i>我的评论<i class="iconfont icon-xiayibu"></i></a>
-					</li>
-					<li>
-						<a href=""><i class="iconfont icon-huawen"></i>领取旧版商城积分<i class="iconfont icon-xiayibu"></i></a>
 					</li>
 				</ul>
 				<div class="navlink">

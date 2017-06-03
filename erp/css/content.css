@@ -1,4 +1,5 @@
 @import url(style.css);
+@import url(order.css);
 .clearfix:after {
   display: block;
   clear: both;
@@ -14,9 +15,10 @@
 
 .box .contop {
   position: relative;
+  padding-top: 24px;
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
-  height: 65px;
+  height: 41px;
 }
 
 .box .contop button {
@@ -73,6 +75,7 @@
   background-color: white;
   border: 2px solid #19a97b;
   position: absolute;
+  z-index: 10;
   border-radius: 8px;
 }
 
@@ -89,6 +92,16 @@
 
 .box .contop .addprodut h2 .close_add :hover {
   background: #19a97b;
+}
+
+.box .contop .addprodut ul li .checkbox {
+  margin-left: 120px;
+  width: 520px;
+}
+
+.box .contop .addprodut ul li .checkbox label {
+  margin-right: 10px;
+  line-height: 22px;
 }
 
 .box .contop .addprodut ul li .select {
@@ -120,6 +133,7 @@
 }
 
 .box .goodsbox .modifyprodut {
+  z-index: 24;
   display: none;
   position: absolute;
   left: 50px;
@@ -143,6 +157,38 @@
 
 .box .goodsbox .modifyprodut h2 .close_modify :hover {
   background: #19a97b;
+}
+
+.box .goodsbox .modifyprodut ul li .checkbox {
+  margin-left: 120px;
+  width: 520px;
+}
+
+.box .goodsbox .modifyprodut ul li .checkbox label {
+  margin-right: 10px;
+  line-height: 22px;
+}
+
+.box .goodsbox .modifyprodut ul li .select {
+  padding: 0 20px;
+}
+
+.box .goodsbox .modifyprodut ul li .select option {
+  height: 16px;
+  line-height: 16px;
+}
+
+.box .goodsbox .modifyprodut ul li .item_name {
+  float: left;
+}
+
+.box .goodsbox .modifyprodut ul li .input_img {
+  float: left;
+  width: 320px;
+}
+
+.box .goodsbox .modifyprodut ul li .modify_link_btn {
+  margin-left: 122px;
 }
 
 .box .goodsbox table {
@@ -218,125 +264,5 @@
 }
 
 .box .goodsbox table tbody tr a:hover {
-  color: #dbac72;
-}
-
-.order_box {
-  height: 100%;
-  overflow: hidden;
-}
-
-.order_box .contop {
-  position: relative;
-  width: 100%;
-  border-bottom: 1px solid #f2f2f2;
-  height: 65px;
-}
-
-.order_box .contop button {
-  height: 30px;
-  padding: 0 10px;
-  border-radius: 4px;
-  border: 0;
-  color: #fff;
-  outline: none;
-  background: #19a97b;
-}
-
-.order_box .contop .contop_r {
-  float: right;
-  margin-right: 26px;
-}
-
-.order_box .contop .contop_r button {
-  background-color: #dbac72;
-}
-
-.order_box .contop .searchbox {
-  float: left;
-  height: 30px;
-  text-align: center;
-  margin-left: 12px;
-}
-
-.order_box .contop .searchbox .tip, .order_box .contop .searchbox span, .order_box .contop .searchbox button {
-  margin: 0 10px;
-  line-height: 28px;
-  height: 28px;
-  float: left;
-}
-
-.order_box .contop .searchbox span {
-  display: block;
-  height: 30px;
-  border: 1px solid #f2f2f2;
-  border-radius: 4px;
-}
-
-.order_box .contop .searchbox span input {
-  border: 0;
-  outline: none;
-}
-
-.order_box .order_outbox {
-  padding: 10px 15px;
-  height: 520px;
-}
-
-.order_box .order_outbox table {
-  width: 100%;
-  height: 490px;
-  margin-top: 10px;
-  border-collapse: collapse;
-}
-
-.order_box .order_outbox table thead tr {
-  width: 1040px;
-  height: 40px;
-  background-color: #eee;
-  line-height: 40px;
-  text-align: center;
-}
-
-.order_box .order_outbox table thead tr :nth-child(3) {
-  width: 125px;
-}
-
-.order_box .order_outbox table thead tr th {
-  width: 130px;
-  word-wrap: break-word;
-}
-
-.order_box .order_outbox table tbody {
-  width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  text-align: center;
-  height: 450px;
-}
-
-.order_box .order_outbox table tbody ::-webkit-scrollbar {
-  width: 16px;
-  height: 16px;
-  background-color: #f5f5f5;
-}
-
-.order_box .order_outbox table tbody tr {
-  height: 55px;
-  line-height: 55px;
-  border-bottom: 1px solid #ccc;
-}
-
-.order_box .order_outbox table tbody tr td {
-  height: 55px;
-  overflow: hidden;
-}
-
-.order_box .order_outbox table tbody tr :nth-child(3) {
-  width: 125px;
-  color: #dbac72;
-}
-
-.order_box .order_outbox table tbody tr a:hover {
   color: #dbac72;
 }

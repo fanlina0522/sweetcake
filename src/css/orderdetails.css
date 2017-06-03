@@ -63,11 +63,12 @@ ul {
   overflow-y: auto;
 }
 
-#container main li {
+#container main .ordes {
   margin-top: 10px;
 }
 
-#container main li .ornum {
+#container main .ordes .ornum {
+  background: #fff;
   position: relative;
   font-size: 14px;
   line-height: 30px;
@@ -76,69 +77,70 @@ ul {
   background: #fff;
 }
 
-#container main li .ornum .orStatus {
+#container main .ordes .ornum .orStatus {
   position: absolute;
   color: #aa0000;
   right: 10px;
 }
 
-#container main li .or_msg {
+#container main .ordes .or_msg {
   background: #fff;
 }
 
-#container main li .or_msg .or_up {
+#container main .ordes .or_msg .or_up {
   border-bottom: 1px solid #eee;
   padding: 10px;
 }
 
-#container main li .or_msg .or_up .or_up_left {
+#container main .ordes .or_msg .or_up .or_up_left {
   float: left;
   width: 25%;
 }
 
-#container main li .or_msg .or_up .or_up_left img {
+#container main .ordes .or_msg .or_up .or_up_left img {
   width: 100%;
 }
 
-#container main li .or_msg .or_up .or_up_right {
+#container main .ordes .or_msg .or_up .or_up_right {
+  font-size: 14px;
   float: left;
   width: 65%;
   padding-left: 10px;
 }
 
-#container main li .or_msg .or_up .or_up_right .qty_price {
-  position: relative;
+#container main .ordes .or_msg .or_up .or_up_right .qty_price {
   padding-top: 20%;
+  position: relative;
 }
 
-#container main li .or_msg .or_up .or_up_right .qty_price .goodsqty {
+#container main .ordes .or_msg .or_up .or_up_right .qty_price .goodsqty {
   position: absolute;
-  bottom: 0px;
-  right: 0;
+  bottom: 0;
+  right: -20px;
 }
 
-#container main li .or_msg .or_down {
+#container main .ordes .or_msg .or_down {
   padding: 0 10px;
   height: 30px;
   display: flex;
+  font-size: 14px;
   line-height: 30px;
 }
 
-#container main li .or_msg .or_down > p {
+#container main .ordes .or_msg .or_down > p {
   flex: 1;
   text-align: right;
-  font-size: 12px;
   line-height: 30px;
   position: relative;
 }
 
-#container main li .zengpin, #container main li .peisongxinxi {
+#container main .ordes .zengpin, #container main .ordes .peisongxinxi {
   margin-top: 10px;
   background: #fff;
 }
 
-#container main li .zengpin p, #container main li .peisongxinxi p {
-  font-size: 14px;
+#container main .ordes .zengpin p, #container main .ordes .peisongxinxi p {
+  font-size: 12px;
   padding-left: 10px;
   border-bottom: 1px solid #eee;
   height: 30px;
@@ -147,12 +149,12 @@ ul {
   position: relative;
 }
 
-#container main li .zengpin p:nth-of-type(1), #container main li .peisongxinxi p:nth-of-type(1) {
-  font-size: 16px;
+#container main .ordes .zengpin p:nth-of-type(1), #container main .ordes .peisongxinxi p:nth-of-type(1) {
+  font-size: 14px;
   color: #000;
 }
 
-#container main li .zengpin p span, #container main li .peisongxinxi p span {
+#container main .ordes .zengpin p span, #container main .ordes .peisongxinxi p span {
   color: #000;
   position: absolute;
   left: 85px;
