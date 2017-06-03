@@ -120,6 +120,9 @@ input {
 }
 #mainWarp .product li .conWarp h4{
         font-weight: normal;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
 }
 #mainWarp .product li .conWarp h5{
         font-weight: normal;

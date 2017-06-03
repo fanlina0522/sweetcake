@@ -10,10 +10,19 @@ var exists = function(name,keyword, response){
 				console.log(error)	
 			} else {
 
+
 				if (keyword == 'null') {
-					collection.find({type:name}).toArray(function(err, docs){
-							response.send(docs)
-						});
+					console.log(name)
+					if(name=="全部蛋糕 All Cake"){
+                        collection.find().toArray(function(err, docs){
+                            response.send(docs)
+                        });
+					}else{
+                        collection.find({type:name}).toArray(function(err, docs){
+                            response.send(docs)
+                        });
+					}
+
 				}
 				else if(name == "null"){
 					 var reg = new RegExp("^.*"+keyword+"\.*$","i");

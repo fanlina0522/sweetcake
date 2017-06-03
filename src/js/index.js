@@ -1,5 +1,5 @@
 $(function(){
-    goodsajax('hot','null')
+    goodsajax(  "畅销新品Hot Sales",'null')
 
     function goodsajax(name,keyword) {
         $.ajax({

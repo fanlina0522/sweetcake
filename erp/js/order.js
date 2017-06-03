@@ -23,14 +23,14 @@ $(function(){
   }
 
 	 // 自添加所有订单
-  $.post(erp.baseUrl +  'order', {
+  $.post(erp.baseUrl +  'orderall', {
    'getorder':'allorder'
-  }, function(response){
+  }, function(response){console.log(response);
     if(response.status){
-      console.log(response);
+
       setOrderTbody(response);  
       } else {
-        alert(response.message);
+        // console.log(response.message);
       }
    });
 

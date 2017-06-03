@@ -22,9 +22,9 @@ exports.Register = function(app){
 	// }));
 
 	// 获取所有订单
-	app.post('/order', urlencodedParser, function(request, response){
+	app.post('/orderall', urlencodedParser, function(request, response){
 		response.setHeader("Access-Control-Allow-Origin","*");
-		// console.log(request.body);
+		console.log(request.body);
 		db.orderall('order', request.body, 'orderID', function(data){
 			if(data){
 				response.send(apiResult(true,'订单查询成功',data))
